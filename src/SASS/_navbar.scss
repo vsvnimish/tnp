@@ -1,0 +1,95 @@
+@import "./media";
+$hamburger-layer-width : 8vw;
+$hamburger-layer-spacing : 3px;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+@mixin barTabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  width: 100%;
+  min-height: 3em;
+  margin-bottom: 3rem;
+  z-index: 10;
+  box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
+}
+
+.navBar {
+  @include barTabs;
+  background-color: transparent;
+
+  h1 {
+    justify-content: start;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 10rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    opacity: 0;
+
+    @include mobile {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      right: 8%;
+      transform: translate(10%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+
+      .ham {
+        padding: 0%;
+        outline: 0;
+      }
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 2rem;
+    list-style: none;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 70vw;
+    justify-content: end;
+  }
+
+  @include mobile {
+    .list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      padding: 2rem;
+      top: -1000%;
+      z-index: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    .list.active {
+      background: #d3d3d3;
+      top: 80px;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    item {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  }
+}
+
+.active {
+  position: fixed;
+  background-color: #dfdfdf;
+  box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
+}

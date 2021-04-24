@@ -1,0 +1,48 @@
+# OCS IIITR
+
+### Layout
+- Navbar
+    - Home
+    - Recruiter's corner
+        - Why Recruit?
+        - Programs at IIITR
+        - Extracurricularas
+        - Brochures
+    - Student's corner
+    - Achievements
+    - React out to IIITR
+    - Contact
+- Landing Part
+    - IIITR Students pic / some cool designs
+- Why Recruit Us
+- Department
+    - Math
+        - Courses Offered
+            - Faculty details
+    - CSE
+        - Courses Offered
+            - Faculty details
+- Faculties
+    - Math
+        - IIITR faculties
+        - IITH faculties
+    - CSE
+        - IIITR faculties
+        - IITH Faculties
+- Achievement
+    - Amazing Web developement Teams
+    - Very less students even though powerfull culture
+    - Club Activites
+    - Some amazing projects
+    - Amazing management skills
+    - Startup culture  
+- Footer
+    - Contact Details
+    - Quicklinks
+        - IIITR Website
+        - faculty profiles
+        - IITH Website
+        - OCS IITH
+### Packages Installed
+- Bootstrap
+- Mdbreact
