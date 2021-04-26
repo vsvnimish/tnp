@@ -1,1 +1,11 @@
 @import "./navbar";
+@import "./homePage";
+
+.base{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBody{
+    margin-top: 10rem;
+}
