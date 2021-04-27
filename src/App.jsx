@@ -3,10 +3,10 @@ import { Switch, Route} from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './Structure/Footer';
-import Department from "./Pages/department";
-import Faculties from "./Pages/faculties";
-import WhyRecruitUs from "./Pages/whyRecruitUs";
-import Home from "./Pages/homePage";
+import Department from "./Pages/Department";
+import Faculties from "./Pages/Faculties";
+import WhyRecruitUs from "./Pages/WhyRecruitUs";
+import Home from "./Pages/HomePage";
 
 function App() {
 

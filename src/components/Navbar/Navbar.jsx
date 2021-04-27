@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import BarItems from './BarItems'
 import { useHistory } from 'react-router-dom';
+import $ from 'jquery';
 
 export default function Navbar(props) {
 
@@ -9,7 +10,7 @@ export default function Navbar(props) {
     const [openBar, setopenBar] = useState(false);
     
     const changeNavBack = () =>{
-        if(window.scrollY > 20){
+        if(window.scrollY > 20 || $('.top, .content').hasClass('scrolled')){
             setnavState("active");
         }else{
             setnavState(" ");
