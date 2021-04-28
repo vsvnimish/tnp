@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
-import {ReactComponent as BackgroundCurve} from '../components/SVG/BackgroundCurve.svg';
+// import {ReactComponent as BackgroundCurve} from '../components/SVG/BackgroundCurve.svg';
 
 export default function HomePage() {
 
@@ -30,16 +30,16 @@ export default function HomePage() {
     window.addEventListener("scroll", actOnScroll);
 
     return (
-        <div>
+        <div >
             
             <div className="top">
 	            <Heading
                     class="concept-one"
                     heading="Welcome To OCS-IIITR"
                 />
-                <BackgroundCurve
+                {/* <BackgroundCurve
                     className='curve'
-                />
+                /> */}
             </div>
 
             <div className="content">
