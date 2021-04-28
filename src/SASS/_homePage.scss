@@ -30,7 +30,7 @@
 .concept-one {
   display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
-  padding: 8em;
+  padding-top: 10em;
 
   h1 {
     font-family: "Merriweather", serif;
@@ -115,5 +115,5 @@
 
 .curve{
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
 }

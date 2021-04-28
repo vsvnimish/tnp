@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+.main{
+    padding-top: 70%;
+
+    .footer{
+        display: flex;
+        padding: 4rem;
+        justify-content: space-around;
+        
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        height: fit-content;
+        background-color: #081E3F;
+    
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+.logoF{
+    filter: invert(95%) sepia(90%) saturate(10%) hue-rotate(220deg) brightness(102%) contrast(99%);
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 8vw;
+    height: 13vh;
+}
+
+
+.quickLinks{
+    flex: 1;
+}
+.contact{
+    flex: 1;
+}
+.connect{
+    flex: 1;
+}

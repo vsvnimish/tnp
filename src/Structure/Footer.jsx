@@ -1,23 +1,27 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-
-const useStyles = makeStyles({
-    temp: {
-        paddingTop: "100rem",
-        textAlign: "center"
-        },
-});
+import React from 'react';
+import './_footer.scss';
+import Logo from '../images/logo/logo.png';
+import Social from '../components/socialMedia/Social';
 
 
 const Footer = (props) => {
-    const classes = useStyles(props);
 
     return (
-        <div className={classes.temp}>
-            {/* This is the HTML for footer */}
-            <h2>This is footer</h2>
+        <div className="main">
+            <footer>
+                <div className="footer">
+                    <img src={Logo} alt="Logo"  className="logoF" />
+                    <div className="quickLinks"  > <h1>QUICK LINKS</h1></div>
+                    <div className="contact"  > <h1>CONTACT US</h1></div>
+                    <div className="connect"  >
+                        <h1>LETS CONNECT</h1>
+                        <Social/>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
+
 
 export default Footer

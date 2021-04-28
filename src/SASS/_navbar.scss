@@ -1,29 +1,26 @@
 @import "./media";
-$hamburger-layer-width: 8vw;
+$hamburger-layer-width: 30px;
 $hamburger-layer-spacing: 3px;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin barTabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
   font-size: 1.2rem;
-  width: 100%;
   min-height: 3rem;
   margin-bottom: 3rem;
-  z-index: 10;
   padding: 0.8rem;
+  padding-right: 5%;
 }
 
 .navBar {
   @include barTabs;
-  background-color: transparent;
+  color: transparent !important;
+  background-color: transparent !important;
 
-  h1 {
+  .logo {
+    height: 7vh;
     justify-content: start;
     align-items: center;
-    padding-left: 1%;
+    padding-left: 5%;
     padding-right: 10rem;
     cursor: pointer;
   }
@@ -32,38 +29,30 @@ $hamburger-layer-spacing: 3px;
     opacity: 0;
 
     @include mobile {
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      right: 8%;
-      transform: translate(10%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
+      display: contents;
 
       .ham {
-        padding: 0%;
         outline: 0;
       }
     }
   }
 
   .list {
+    position: absolute;
+    right: 5%;
     display: grid;
     grid-template-columns: repeat(5, auto);
+    color: black;
     grid-gap: 2rem;
     list-style: none;
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    width: 70vw;
-    justify-content: end;
 
     .dropdown {
-      padding: 1rem;
       margin-top: 2rem;
       border-radius: 10%;
       perspective: 1000px;
       font-size: 2rem;
+      padding: 1rem;
       z-index: 100;
       &:hover {
         background-color: rgba(207, 207, 207, 0.6);
@@ -75,9 +64,7 @@ $hamburger-layer-spacing: 3px;
 
       .dropdownMenu {
         position: absolute;
-        padding: 0;
         top: 100%;
-        left: 0;
         width: 100%;
         perspective: 1000px;
         z-index: -1;
@@ -118,7 +105,6 @@ $hamburger-layer-spacing: 3px;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      padding: 2rem;
       top: -1000%;
       z-index: 0;
       opacity: 1;
@@ -135,7 +121,7 @@ $hamburger-layer-spacing: 3px;
 }
 
 .active {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
 
