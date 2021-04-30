@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Switch, Route} from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Navbar from './components/Navbar/Navbar.jsx';
@@ -7,10 +7,19 @@ import Department from "./Pages/Department";
 import Faculties from "./Pages/Faculties";
 import WhyRecruitUs from "./Pages/WhyRecruitUs";
 import Home from "./Pages/HomePage";
+import ErrorPage from './Pages/404';
 
 function App() {
 
-  return (
+  const [screenSize, setScreenSize] = useState(window.screen.width);
+  window.addEventListener('resize', ()=>{setScreenSize(window.screen.width)});
+
+  if(screenSize <=960){
+    return (
+      <ErrorPage/>
+    )
+  }else{
+    return (
     <div className="base" >
 
       <CssBaseline/>
@@ -36,6 +45,7 @@ function App() {
 
     </div>
   );
+}
 }
 
 export default App;

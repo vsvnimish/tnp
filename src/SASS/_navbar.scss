@@ -15,6 +15,7 @@ $hamburger-layer-spacing: 3px;
   @include barTabs;
   color: transparent !important;
   background-color: transparent !important;
+  box-shadow: none !important;
 
   .logo {
     height: 7vh;
@@ -23,6 +24,8 @@ $hamburger-layer-spacing: 3px;
     padding-left: 5%;
     padding-right: 10rem;
     cursor: pointer;
+    transform: translateY(-600px);
+    animation: 1s slideIn ease-in-out forwards 0s;
   }
 
   .menu {
@@ -54,6 +57,8 @@ $hamburger-layer-spacing: 3px;
       font-size: 2rem;
       padding: 1rem;
       z-index: 100;
+      transform: translateY(-600px);
+      animation: 1s slideIn ease-in-out forwards 0s;
       &:hover {
         background-color: rgba(207, 207, 207, 0.6);
         cursor: pointer;
@@ -64,16 +69,15 @@ $hamburger-layer-spacing: 3px;
 
       .dropdownMenu {
         position: absolute;
-        top: 100%;
-        width: 100%;
+        top: 120%;
         perspective: 1000px;
         z-index: -1;
+        padding: 0%;
         li {
           display: none;
           list-style: none;
           color: white;
-          width: 100%;
-          background-color: #9e9fa0;
+          background-color: #b3b3b3;
           padding: 10px 20px;
           font-size: 1.2rem;
           opacity: 0;
@@ -91,6 +95,7 @@ $hamburger-layer-spacing: 3px;
 
         @for $num from 0 through 5 {
           .dropdownItem-#{$num} {
+            font-size: 2rem;
             transform-origin: top center;
             animation: translateX 300ms ($num * 60ms) ease-in-out forwards;
           }
@@ -124,6 +129,14 @@ $hamburger-layer-spacing: 3px;
   background-color: #ffffff !important;
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 
 @keyframes translateX {
   0% {
