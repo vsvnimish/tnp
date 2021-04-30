@@ -50,6 +50,7 @@ $hamburger-layer-spacing: 3px;
     list-style: none;
     text-align: center;
 
+
     .dropdown {
       margin-top: 2rem;
       border-radius: 10%;
@@ -63,13 +64,14 @@ $hamburger-layer-spacing: 3px;
         background-color: rgba(207, 207, 207, 0.6);
         cursor: pointer;
       }
+
       &:hover .dropdownMenu li {
         display: block;
       }
 
       .dropdownMenu {
         position: absolute;
-        top: 120%;
+        top: 100%;
         perspective: 1000px;
         z-index: -1;
         padding: 0%;
