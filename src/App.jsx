@@ -9,6 +9,7 @@ import WhyRecruitUs from "./Pages/WhyRecruitUs";
 import Home from "./Pages/HomePage";
 import ErrorPage from './Pages/404';
 
+
 function App() {
 
   const [screenSize, setScreenSize] = useState(window.screen.width);
@@ -30,7 +31,7 @@ function App() {
         <Switch>
             
             <Route exact path='/' render={props => (<Home/>)}/>
-            <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs />)}
+            <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs />) }
             />
             <Route path='/Department' render={props => (<Department />)} 
             />

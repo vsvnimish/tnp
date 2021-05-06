@@ -11,6 +11,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -48,10 +49,10 @@ function ScrollTop(props) {
     );
     }
 
-    ScrollTop.propTypes = {
-    children: PropTypes.element.isRequired,
-    window: PropTypes.func,
-    };
+    // ScrollTop.propTypes = {
+    // children: PropTypes.element.isRequired,
+    // window: PropTypes.func,
+    // };
 
 
 
@@ -63,13 +64,14 @@ export default function Navbar(props) {
     
     const changeNavBack = () =>{
         if(window.scrollY > 20 || $('.top, .content').hasClass('scrolled')){
-            setnavState("active");
+            setnavState("activeA");
         }else{
             setnavState(" ");
         }
     }
 
     function clickDropDown(item){
+        window.removeEventListener('scroll', null);
         if(!item.drop){
             history.push(item.route); 
         }
@@ -104,7 +106,11 @@ export default function Navbar(props) {
                     {BarItems.map( item => {
                         return(
                             <li key={item.id} className="dropdown" onClick={()=> {clickDropDown(item)}}> 
-                                {item.heading}
+                                
+                                <div class="naviTab">
+	                                <div class="tabTitle">{item.heading}</div>
+                                    {item.drop ? <ArrowDropDownIcon/> : null}
+                                </div>
                                 <ul className="dropdownMenu">
                                     {item.drop ? item.drop.map( (droppedItem,id) => {
                                         return( 

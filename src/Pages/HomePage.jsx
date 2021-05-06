@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Back from '../images/back.jpg';
 // import {ReactComponent as BackgroundCurve} from '../components/SVG/BackgroundCurve.svg';
 
 export default function HomePage() {
@@ -32,14 +34,20 @@ export default function HomePage() {
     return (
         <div >
             
-            <div className="top">
+            <div className="top" >
 	            <Heading
-                    class="concept-one"
+                    cla="concept-one"
                     heading="Welcome To OCS-IIITR"
                 />
-                {/* <BackgroundCurve
-                    className='curve'
-                /> */}
+                {/* <div className="mainD">
+                    <div className="d1"></div>
+                    <div className="d2"></div>
+                    <div className="d3"></div>
+                    <div className="d4"></div>
+                </div> */}
+                <div className = "scrollNoti"  >
+                    <span >Scroll Down <ArrowDownwardIcon style={{transform: "rotate(-90deg)"}} /> </span>
+                </div>
             </div>
 
             <div className="content">
@@ -49,7 +57,6 @@ export default function HomePage() {
             </div>
         </div>
 
-        
     )
 }
 

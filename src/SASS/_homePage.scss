@@ -89,7 +89,9 @@
 	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
 	overflow: hidden;
   z-index: 1;
-  // background-image: url("../images/back.jpg");
+  background-image: url(https://iiitr.ac.in/assets/images/index_page/cover.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .top.scrolled{
@@ -118,3 +120,152 @@
   position: absolute;
   bottom: 0%;
 }
+
+.scrollNoti{
+  display: flex;
+  position: fixed;
+  bottom: 5vh;
+  right: 2vw;
+  font-size: 1.8rem;
+  padding: 2rem;
+  animation: 0.5s updown ease-in-out alternate infinite ;
+  user-select: none;
+
+  span{
+    transform: rotate(90deg);
+  }
+  
+}
+
+@keyframes updown{
+  0%{
+    bottom: 5vh;
+  }
+  100%{
+    bottom: 3vh;
+  }
+}
+
+.abhi{
+  transform: rotate(-90deg);
+}
+
+
+
+/////////////////////////////////////
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   background-color: #2f2f2f;
+// }
+// .mainD {
+//   height: 100vh;
+//   width: 100vw;
+//   position: relative;
+// }
+// .d1 {
+//   position: absolute;
+//   background-image: url(../images/cover.webp);
+//   background-size: 2700px 1500px;
+
+//   height: 50vh;
+//   width: 15vw;
+
+//   background-position: 0 50%;
+
+//   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 2;
+//   animation: dd1 10s 1, dd12 10s 1;
+//   animation-delay: 4s, 14s;
+// }
+// .d2 {
+//   position: absolute;
+//   background-image: url(../images/cover.webp);
+//   background-size: 2700px 1500px;
+
+//   height: 70vh;
+//   width: 25vw;
+
+//   background-position: -10vw 50%;
+//   left: 10vw;
+
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 1;
+//   animation: dd2 10s 2;
+//   animation-delay: 4s;
+// }
+// .d3 {
+//   position: absolute;
+//   background-image: url(../images/cover.webp);
+//   background-size: 2700px 1500px;
+//   overflow: hidden;
+
+//   height: 120vh;
+//   width: 40vw;
+//   left: 25vw;
+//   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+//   background-position: -35vw 50%;
+
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 3;
+//   animation: dd3 10s 2;
+//   animation-delay: 4s;
+// }
+// .d4 {
+//   position: absolute;
+//   overflow: hidden;
+//   background-image: url(../images/cover.webp);
+//   background-size: 2700px 1500px;
+
+//   height: 100vh;
+//   width: 25vw;
+//   left: 60vw;
+//   background-position: -70vw 50%;
+
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 1;
+//   animation: dd4 10s 2;
+//   animation-delay: 4s;
+// }
+
+// @keyframes dd1 {
+//   0% {
+//   }
+//   50% {
+//     width: 95vw;
+//   }
+// }
+// @keyframes dd12 {
+//   0% {
+//   }
+//   50% {
+//     background-position: calc(0vw - 40px) 50%;
+//   }
+// }
+// @keyframes dd2 {
+//   0% {
+//   }
+//   50% {
+//     background-position: calc(-10vw - 40px) 50%;
+//   }
+// }
+// @keyframes dd3 {
+//   0% {
+//   }
+//   50% {
+//     background-position: calc(-35vw - 40px) 50%;
+//   }
+// }
+// @keyframes dd4 {
+//   0% {
+//   }
+//   50% {
+//     background-position: calc(-70vw - 40px) 50%;
+//   }
+// }

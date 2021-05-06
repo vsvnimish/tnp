@@ -69,19 +69,27 @@ $hamburger-layer-spacing: 3px;
         display: block;
       }
 
+      .tabIcon{
+        height: 2.5rem;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+      }
+
       .dropdownMenu {
         position: absolute;
         top: 100%;
         perspective: 1000px;
+        width: 90%;
         z-index: -1;
         padding: 0%;
+
         li {
           display: none;
           list-style: none;
           color: white;
           background-color: #b3b3b3;
           padding: 10px 20px;
-          font-size: 1.2rem;
+          font-size: 1.2vw;
           opacity: 0;
           box-shadow: 0 0 4px 0 #666666;
 
@@ -95,11 +103,11 @@ $hamburger-layer-spacing: 3px;
           cursor: pointer;
         }
 
-        @for $num from 0 through 5 {
+        @for $num from 0 through 10 {
           .dropdownItem-#{$num} {
-            font-size: 2rem;
+            font-size: 1.1vw;
             transform-origin: top center;
-            animation: translateX 300ms ($num * 60ms) ease-in-out forwards;
+            animation: translateX 460ms ($num * 70ms) ease-in-out forwards;
           }
         }
       }
@@ -127,7 +135,7 @@ $hamburger-layer-spacing: 3px;
   }
 }
 
-.active {
+.activeA {
   background-color: #ffffff !important;
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
@@ -155,3 +163,31 @@ $hamburger-layer-spacing: 3px;
     transform: translateX(0px);
   }
 }
+
+
+.naviTab {
+  display: -webkit-box;
+}
+
+
+.tabTitle {
+  position: relative;
+  display: flex;
+}
+
+.tabTitle::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: whitesmoke;
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
+}
+
+.naviTab:hover .tabTitle::after {
+	width: 100%;
+	left: 0;
+}
+

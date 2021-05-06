@@ -3,7 +3,7 @@ import React from 'react'
 export default function headingAnnimation(props) {
     return (
         <div>
-            <div className={`concept ${props.class}`}>
+            <div className={`concept ${props.cla}`}>
                 <div className="hover hover-1"></div>
                 <div className="hover hover-2"></div>
                 <div className="hover hover-3"></div>

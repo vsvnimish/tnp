@@ -1,7 +1,6 @@
-import CreateIcon from '@material-ui/icons/Create';
-import VoteIcon from '@material-ui/icons/HowToVote';
-import ResponseIcon from '@material-ui/icons/Forum';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import uni from "../../images/Icons/uniIcon.png";
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
 
 
 const BarItems= [
@@ -9,60 +8,71 @@ const BarItems= [
         id: 0,
         heading: "Home",
         description: "Create a polling form.",
-        icon: <CreateIcon />,
+        icon: <img className="tabIcon" src={uni} alt='' />,
         route: "/",
     },
     {
         id: 1,
         heading: "Why Recruit Us",
         description: "Vote too already existing poll.",
-        icon: <VoteIcon/>,
+        icon: <WorkIcon className="tabIcon" />,
         route: "/WhyRecruitUs",
     },
     {
         id: 2,
-        heading: "Department",
+        heading: "Programs at IIITR",
         description: "View Responses to the polls created by you.",
-        icon: <ResponseIcon/>,
+        icon: <SchoolIcon className="tabIcon" />,
         route: "/Department",
+        // drop: [
+        //     {
+        //         id: 0,
+        //         heading: "Department of Computer Science and Engineering"
+        //     },
+        //     {
+        //         id: 1,
+        //         heading: "Department of Mathematics"
+        //     },
+        //     {
+        //         id: 2,
+        //         heading: "Department of Liberal and Creative Arts"
+        //     }
+        // ]
     },{
         id: 3,
-        heading: "Faculties",
+        heading: "Club Activities",
         description: "Login to create new polls or to submit a response.",
-        icon: <ExitToAppIcon/>,
         route: "/Faculties",
-    },{
-        id: 4,
-        heading: "DropDown",
-        description: "Login to create new polls or to submit a response.",
-        icon: <ExitToAppIcon/>,
-        drop: [
-            {
-                id: 0,
-                heading: "item 1",
-                description: "Login to create new polls or to submit a response.",
-                icon: <ExitToAppIcon/>,
-                route: "/Faculties",
-            },{
-                id: 1,
-                heading: "item 2",
-                description: "Login to create new polls or to submit a response.",
-                icon: <ExitToAppIcon/>,
-                route: "/Faculties",
-            },{
-                id: 2,
-                heading: "item 2",
-                description: "Login to create new polls or to submit a response.",
-                icon: <ExitToAppIcon/>,
-                route: "/Faculties",
-            },{
-                id: 3,
-                heading: "item 3",
-                description: "Login to create new polls or to submit a response.",
-                icon: <ExitToAppIcon/>,
-                route: "/Faculties",
-            }
-        ]
+        // drop: [
+        //     {
+        //         id: 0,
+        //         heading: "CodeSoc"
+        //     },
+        //     {
+        //         id: 1,
+        //         heading: "ElectroGeeks"
+        //     },
+        //     {
+        //         id: 2,
+        //         heading: "Xposure"
+        //     },
+        //     {
+        //         id: 3,
+        //         heading: "Finesse"
+        //     },
+        //     {
+        //         id: 4,
+        //         heading: "NSO"
+        //     },
+        //     {
+        //         id: 5,
+        //         heading: "NSS"
+        //     },
+        //     {
+        //         id: 6,
+        //         heading: "Ek Bharat Shreshtha Bharat"
+        //     }
+        // ]
     }
 ]
 
