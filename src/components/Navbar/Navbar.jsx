@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import BarItems from './BarItems'
+import BarItems from '../../Content/BarItems'
 import { useHistory } from 'react-router-dom';
-import Logo from '../../images/logo/logo.png';
+import Logo from '../../images/ocs_logo.svg';
 import $ from 'jquery';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     }));
 
 function ScrollTop(props) {
+
     const { children, window } = props;
     const classes = useStyles();
 
@@ -62,7 +63,7 @@ export default function Navbar(props) {
     const [openBar, setopenBar] = useState(false);
     
     const changeNavBack = () =>{
-        if(window.scrollY > 20 || $('.top, .content').hasClass('scrolled')){
+        if(window.scrollY > 20 ){
             setnavState("activeA");
         }else{
             setnavState(" ");
@@ -91,7 +92,7 @@ export default function Navbar(props) {
     window.addEventListener("scroll", changeNavBack);
 
     return (
-        <div > 
+        <div className="navBase" > 
             <AppBar className={`navBar ${navState}`} >
                 <Toolbar >
 
