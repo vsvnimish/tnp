@@ -5,10 +5,14 @@ $hamburger-layer-spacing: 3px;
 
 @mixin barTabs {
   font-size: 1.2rem;
-  min-height: 3rem;
+  height: 9vh;
   margin-bottom: 3rem;
   padding: 0.8rem;
   padding-right: 5%;
+}
+
+.navBase{
+  height: 9vh;
 }
 
 .navBar {
@@ -18,11 +22,12 @@ $hamburger-layer-spacing: 3px;
   box-shadow: none !important;
 
   .logo {
-    height: 7vh;
+    position: absolute;
+    height: 8vh;
     justify-content: start;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 10rem;
+    margin-left: 5%;
+    margin-right: 10rem;
     cursor: pointer;
     transform: translateY(-600px);
     animation: 1s slideIn ease-in-out forwards 0s;
@@ -38,6 +43,10 @@ $hamburger-layer-spacing: 3px;
         outline: 0;
       }
     }
+  }
+
+  .ham{
+    cursor: default;
   }
 
   .list {

@@ -1,9 +1,9 @@
-import uni from "../../images/Icons/uniIcon.png";
+import uni from "../images/Icons/uniIcon.png";
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 
 
-const BarItems= [
+const BarItems = [
     {
         id: 0,
         heading: <i className="fa fa-lg navIcon fa-home" aria-hidden="true"></i>,
@@ -77,4 +77,4 @@ const BarItems= [
 ]
 
 
-export default BarItems;
+export default BarItems; 
