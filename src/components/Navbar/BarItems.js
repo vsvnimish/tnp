@@ -6,7 +6,7 @@ import WorkIcon from '@material-ui/icons/Work';
 const BarItems= [
     {
         id: 0,
-        heading: "Home",
+        heading: <i className="fa fa-lg navIcon fa-home" aria-hidden="true"></i>,
         description: "Create a polling form.",
         icon: <img className="tabIcon" src={uni} alt='' />,
         route: "/",

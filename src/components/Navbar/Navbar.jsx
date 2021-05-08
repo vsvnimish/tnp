@@ -3,7 +3,6 @@ import BarItems from './BarItems'
 import { useHistory } from 'react-router-dom';
 import Logo from '../../images/logo/logo.png';
 import $ from 'jquery';
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';

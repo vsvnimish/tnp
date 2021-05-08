@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import Back from '../images/back.jpg';
-// import {ReactComponent as BackgroundCurve} from '../components/SVG/BackgroundCurve.svg';
+
 
 export default function HomePage() {
 
@@ -39,21 +38,28 @@ export default function HomePage() {
                     cla="concept-one"
                     heading="Welcome To OCS-IIITR"
                 />
-                {/* <div className="mainD">
-                    <div className="d1"></div>
-                    <div className="d2"></div>
-                    <div className="d3"></div>
-                    <div className="d4"></div>
-                </div> */}
+                <div className="aboutIIITR">
+                    Hello
+                </div>
+
+                <div class="news" >
+                    <hr className="line" />
+                    <h1>
+                        Updates
+                    </h1>
+                </div>
+
                 <div className = "scrollNoti"  >
-                    <span >Scroll Down <ArrowDownwardIcon style={{transform: "rotate(-90deg)"}} /> </span>
+                    <i class="fas fa-2x fa-angle-double-down"></i>
                 </div>
             </div>
 
             <div className="content">
-	            <h1 style={{display:'flex',flexDirection:'row'}}>
-                    Content of Front Page Goes Here
-                </h1>
+	            <div className="mission" >
+                    <h1 style={{display:'flex',flexDirection:'row'}}>
+                        Content of Front Page Goes Here
+                    </h1>
+                </div>
             </div>
         </div>
 
