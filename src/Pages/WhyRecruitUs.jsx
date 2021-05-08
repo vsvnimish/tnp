@@ -1,12 +1,15 @@
 import React from 'react'
+import ReusableCard from '../components/ReusableBlock'
 
 export default function whyRecruitUs() {
+
     return (
         <div className="recruitUs">
-            <div className="recruitUsBlock">
-                <h3 className="recruitUsHeading"> The Prodigious Curriculum and Academic System </h3>
-                <div className="recruitUsCard"> 
-                    Being mentored by IITH, IIITR has adopted the innovative
+            <ReusableCard 
+                isLeftAlign={true}
+                haveLogo={false}
+                heading="The Prodigious Curriculum and Academic System"
+                content=" Being mentored by IITH, IIITR has adopted the innovative
                     fractal academics system, which warrants continuous
                     evaluation. This ensures the students have a deeper
                     understanding of the core subjects. Moreover, the highly
@@ -14,12 +17,13 @@ export default function whyRecruitUs() {
                     IIITR exuberates innovation and inventiveness. With core
                     subjects being incorporated from the first semester itself, the
                     students are able to finish their courses quite early and focus
-                    on developing projects & industry relevant skills.
-                </div>
-            </div>
-            <div className="recruitUsBlock">
-                <div className="recruitUsCard"> 
-                    The student family of IIITR consists of competitive coders, web development enthusiasts, eager learners and diligent scholars.
+                    on developing projects & industry relevant skills."
+            />
+            <ReusableCard 
+                isLeftAlign={false}
+                heading="The coders, thinkers and tinkerers"
+                haveLogo={false}
+                content=" The student family of IIITR consists of competitive coders, web development enthusiasts, eager learners and diligent scholars.
                     The students represent the creamy layer of talent in the country.
                     They have been actively involved in various technical and cultural
                     club activities of IIT Hyderabad. At the same time, the students
@@ -27,10 +31,8 @@ export default function whyRecruitUs() {
                     facilitate collaborative learning and introspective growth. (The
                     students have been exploring various industry relevant skills &
                     technologies like Python, C++, Java, Javascript, flutter, Go, flask,
-                    NoSQL, SQL, Django, Node, Vue, React, Docker etc.)
-                </div>
-                <h3 className="recruitUsHeading"> The coders, thinkers and tinkerers </h3>
-            </div>
+                    NoSQL, SQL, Django, Node, Vue, React, Docker etc.)"
+            />
         </div>
     )
 }

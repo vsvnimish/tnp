@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './Structure/Footer';
 import Department from "./Pages/Department";
-import Faculties from "./Pages/Faculties";
+import ClubActivities from "./Pages/ClubActivities"
 import WhyRecruitUs from "./Pages/WhyRecruitUs";
 import Home from "./Pages/HomePage";
 import ErrorPage from './Pages/404';
@@ -35,7 +35,7 @@ function App() {
             />
             <Route path='/Department' render={props => (<Department />)} 
             />
-            <Route path='/Faculties' render={props => (<Faculties />)} 
+            <Route path='/Faculties' render={props => (<ClubActivities />)} 
             />
   
         </Switch>
