@@ -1,0 +1,26 @@
+.recruitUsBlock {
+    background: #2e3c7fe3;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 8px 10px #888888;
+}
+
+.recruitUsCard {
+    width: 65%;
+    padding: 20px;
+    margin: 40px;
+    font-size: medium;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+}
+
+.recruitUsHeading {
+    color: white;
+    font-weight: 900;
+    padding: 20px;
+    margin: 40px;
+}
