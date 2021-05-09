@@ -30,7 +30,7 @@ export default function faculties() {
         }
     ];
     return (
-        <div>
+        <div className="clubs"  >
 
             {clubs.map(
                 club => <ReusableCard 
