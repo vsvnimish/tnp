@@ -32,17 +32,9 @@ function ScrollTop(props) {
         threshold: 100,
     });
 
-    const handleClick = (event) => {
-        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
-
-        if (anchor) {
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    };
-
     return (
     <Zoom in={trigger}>
-        <div onClick={handleClick} role="presentation" className={classes.root}>
+        <div onClick={()=>{document.getElementById('back-to-top').scrollIntoView({ behavior: 'smooth' })}} role="presentation" className={classes.root}>
             {children}
         </div>
     </Zoom>
@@ -93,7 +85,7 @@ export default function Navbar(props) {
 
     return (
         <div className="navBase" > 
-                <Toolbar className={`navBar ${navState}`} id="back-to-top-anchor" >
+                <Toolbar className={`navBar ${navState}`} >
 
                     <img src={Logo} alt="Logo"  className="logo" onClick={()=>{history.push("/")}}/>
 
@@ -127,6 +119,7 @@ export default function Navbar(props) {
 
                 </Toolbar>
 
+                <Toolbar id="back-to-top-anchor" />
 
             <ScrollTop {...props}>
                 <Fab color="secondary" size="small" aria-label="scroll back to top">
