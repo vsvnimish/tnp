@@ -1,3 +1,7 @@
+import Logo from "../images/logo/logo.png"
+
+
+
 const clubs = [
 
     {
@@ -10,7 +14,7 @@ const clubs = [
         assists individuals to advance in a wide
         range of programming skills`,
         haveLogo:true,
-        imgSrc:"https://th.bing.com/th/id/R5da45d43b081913d1c1b1bdc48e352ca?rik=Ql2VUROKtfbw%2bQ&riu=http%3a%2f%2fiitg.ac.in%2fdesign%2fupload%2fimages%2fProjects%2fIITH_logo%2fIIT+Hyderabad+Logo_Final+Design.jpg&ehk=29SS7340p29GEclhKOdyUXErb810RjzloCFFN5GubPo%3d&risl=&pid=ImgRaw",
+        imgSrc:Logo,
         altText:"logo"
     },
 
@@ -21,7 +25,7 @@ const clubs = [
         students explore different facets of Engineering in
         Electronics and Robotics.`,
         haveLogo:true,
-        imgSrc:"https://th.bing.com/th/id/R5da45d43b081913d1c1b1bdc48e352ca?rik=Ql2VUROKtfbw%2bQ&riu=http%3a%2f%2fiitg.ac.in%2fdesign%2fupload%2fimages%2fProjects%2fIITH_logo%2fIIT+Hyderabad+Logo_Final+Design.jpg&ehk=29SS7340p29GEclhKOdyUXErb810RjzloCFFN5GubPo%3d&risl=&pid=ImgRaw",
+        imgSrc:Logo,
         altText:"logo"
     }
 ];
