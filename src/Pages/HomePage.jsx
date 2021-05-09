@@ -45,8 +45,8 @@ export default function HomePage() {
         </div>
 
         <div className="updates">
-          <hr className="line" />
-          <h1>Updates</h1>
+            <hr className="line" />
+            <h1>Updates</h1>
         </div>
                 <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollDown').scrollIntoView({ behavior: 'smooth' })}} >
                     <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
