@@ -1,8 +1,10 @@
+
 import React from 'react'
 import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
 import {AboutIIITR, Mission} from '../Content/Home'
 import ReusableCard from '../components/ReusableBlock';
+
 // import Img from '../images/back.jpg'
 
 export default function HomePage() {
@@ -46,6 +48,7 @@ export default function HomePage() {
           <hr className="line" />
           <h1>Updates</h1>
         </div>
+
 
                 <div className = "scrollNoti" onClick={()=>{document.getElementById('mission').scrollIntoView({ behavior: 'smooth' })}} >
                     <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
@@ -102,6 +105,33 @@ export default function HomePage() {
                     </p>
                 </div>
             </div> */}
+
+//         <div
+//           className="scrollNoti"
+//           onClick={() => {
+//             document
+//               .getElementById("mission")
+//               .scrollIntoView({ behavior: "smooth" });
+//           }}
+//         >
+//           <i
+//             className="fas fa-2x fa-angle-double-down"
+//             style={{ cursor: "pointer" }}
+//           ></i>
+//         </div>
+//       </div>
+
+//       <div className="content">
+//         <div>
+//           <div className="missionHead" id="mission">
+//             <h1 className="heading">Mission and Philosophy</h1>
+//           </div>
+//           <hr className="line" />
+
+//           <p className="missionContent">{Mission}</p>
+//         </div>
+//       </div>
+
     </div>
   );
 }
