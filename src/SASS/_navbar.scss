@@ -1,28 +1,32 @@
 @import "./media";
-$hamburger-layer-width: 30px;
-$hamburger-layer-spacing: 3px;
+$hamburger-layer-width: 10px;
+$hamburger-layer-height: 1.5px;
+$hamburger-layer-spacing: 1px;
+$hamburger-padding-x : 0px;
+$hamburger-padding-y : 0px;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin barTabs {
   font-size: 1.2rem;
-  height: 9vh;
-  margin-bottom: 3rem;
-  padding: 0.8rem;
+  max-height: 15vh;
+  padding: 1.4vw;
   padding-right: 5%;
 }
 
 .navBase{
-  height: 9vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  max-height: 15vh;
 }
 
 .navBar {
   @include barTabs;
-  color: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+  height: 10vh;
+  background-color: transparent ;
 
   .logo {
-    position: absolute;
+    position: fixed;
     height: 8vh;
     justify-content: start;
     align-items: center;
@@ -31,12 +35,14 @@ $hamburger-layer-spacing: 3px;
     cursor: pointer;
     transform: translateY(-600px);
     animation: 1s slideIn ease-in-out forwards 0s;
+    z-index: 10;
   }
 
   .menu {
     opacity: 0;
 
     @include mobile {
+      max-width: 1px;
       display: contents;
 
       .ham {
@@ -50,7 +56,7 @@ $hamburger-layer-spacing: 3px;
   }
 
   .list {
-    position: absolute;
+    position: fixed;
     right: 5%;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -58,6 +64,7 @@ $hamburger-layer-spacing: 3px;
     grid-gap: 2rem;
     list-style: none;
     text-align: center;
+    z-index: 10;
 
 
     .dropdown {
@@ -136,6 +143,10 @@ $hamburger-layer-spacing: 3px;
       transition: all 0.5s ease;
     }
 
+    .logo{
+      display: none;
+    }
+
     .list.active {
       background: #d3d3d3;
       top: 80px;
@@ -146,7 +157,7 @@ $hamburger-layer-spacing: 3px;
 }
 
 .activeA {
-  background-color: #ffffff !important;
+  background-color: #ffffff ;
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
 

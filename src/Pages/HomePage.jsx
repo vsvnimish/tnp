@@ -4,6 +4,8 @@ import $ from 'jquery';
 import {AboutIIITR, Mission} from '../Content/Home'
 // import Img from '../images/back.jpg'
 
+
+
 export default function HomePage() {
 
     // var scrollToNew = false
@@ -31,12 +33,12 @@ export default function HomePage() {
     // window.addEventListener("scroll", actOnScroll);
 
     return (
-        <div >
+        <div className="homepage" >
             <div className="top" >
-	            <Heading
+	            {/* <Heading
                     cla="concept-one"
                     heading="Welcome To OCS-IIITR"
-                />
+                /> */}
                 <div className="aboutIIITR">
                     <h1 className="aboutHead" >
                         About IIITR
@@ -47,26 +49,27 @@ export default function HomePage() {
                     </p>
                 </div>
 
-                <div class="news" >
+                <div className="updates" >
                     <hr className="line" />
                     <h1>
                         Updates
                     </h1>
                 </div>
 
-                <div className = "scrollNoti"  >
-                    <i class="fas fa-2x fa-angle-double-down"></i>
+                <div className = "scrollNoti" onClick={()=>{document.getElementById('mission').scrollIntoView({ behavior: 'smooth' })}} >
+                    <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
                 </div>
+                
             </div>
 
             <div className="content">
 	            <div>
-                    <div className="missionHead" >
+                    <div className="missionHead" id="mission" >
                         <h1 className="heading">
                             Mission and Philosophy
                         </h1>
                     </div>
-                    <hr class="line" />
+                    <hr className="line" />
 
                     <p className="missionContent" >
                         {Mission}

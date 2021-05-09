@@ -23,7 +23,7 @@ const BarItems = [
         heading: "Programs at IIITR",
         description: "View Responses to the polls created by you.",
         icon: <SchoolIcon className="tabIcon" />,
-        route: "/Department",
+        route: "/Programs",
         // drop: [
         //     {
         //         id: 0,
@@ -42,7 +42,7 @@ const BarItems = [
         id: 3,
         heading: "Club Activities",
         description: "Login to create new polls or to submit a response.",
-        route: "/Faculties",
+        route: "/Clubs",
         // drop: [
         //     {
         //         id: 0,

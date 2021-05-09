@@ -71,7 +71,7 @@ export default function Navbar(props) {
     }
 
     function clickDropDown(item){
-        window.removeEventListener('scroll', null);
+        
         if(!item.drop){
             history.push(item.route); 
         }
@@ -93,8 +93,7 @@ export default function Navbar(props) {
 
     return (
         <div className="navBase" > 
-            <AppBar className={`navBar ${navState}`} >
-                <Toolbar >
+                <Toolbar className={`navBar ${navState}`} id="back-to-top-anchor" >
 
                     <img src={Logo} alt="Logo"  className="logo" onClick={()=>{history.push("/")}}/>
 
@@ -107,8 +106,8 @@ export default function Navbar(props) {
                         return(
                             <li key={item.id} className="dropdown" onClick={()=> {clickDropDown(item)}}> 
                                 
-                                <div class="naviTab">
-	                                <div class="tabTitle">{item.heading}</div>
+                                <div className="naviTab">
+	                                <div className="tabTitle">{item.heading}</div>
                                     {item.drop ? <ArrowDropDownIcon/> : null}
                                 </div>
                                 <ul className="dropdownMenu">
@@ -127,9 +126,7 @@ export default function Navbar(props) {
                 </ul>
 
                 </Toolbar>
-            </AppBar>
 
-            <Toolbar id="back-to-top-anchor" />
 
             <ScrollTop {...props}>
                 <Fab color="secondary" size="small" aria-label="scroll back to top">
@@ -141,5 +138,3 @@ export default function Navbar(props) {
     )
 }
 
-
-// style={{backgroundColor:"#1f2833"}}

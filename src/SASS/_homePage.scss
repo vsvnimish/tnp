@@ -76,61 +76,68 @@
 
 
 .top{
-  
 	height: 100vh;
-	width: 100%;
-	top: 0;
-	z-index: 9;
 	//transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
 	overflow: hidden;
-  z-index: 1;
   background-image: url(https://iiitr-testing.netlify.app/assets/images/index_page/cover.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
   .aboutIIITR {
-    position: absolute;
-    height: 80vh;
-    width: 30vw;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    left: 60vw;
-    top: 15vh;
-
+      position: absolute;
+      height: 80vh;
+      width: 30vw;
+      box-shadow: 0px 0px 2vw rgba(0 , 0 , 0 , 0.8);
+      backdrop-filter: blur(0.1vw);
+      left: 60vw;
+      top: 15vh;
+      background: rgba(21 , 54 , 74 , 0.71);
+//segoe
     .aboutHead{
       padding: 1vw;
+      position: relative;
+      max-height: 0.5vh;
+      font-size: 3vw;
+      top: 8%;
+      left: 0.5vw;
     }
 
     p{
       font-family: 'Droid Serif';
       color: #fff;
-      padding: 1.4vw;
-      font-size: 1.2vw;
-      padding-top: 15vh;
-      padding-right: 1vw;
-      padding-left: 1vw;
+      padding: 1vw;
+      font-size: 1.1vw;
+      position: relative;
+      top: 15vh;  
     }
   }
 
-  .news{
-    position: relative;
-    top: 10%;
+  .updates{
+    position: absolute;
+    bottom: 5%;
     height: 30vh;
     width: 40vw;
     margin: 5vw;
-    padding: 1rem;
-    background-color: rgba(43,45,127,0.8);
+    padding: 1vw;
+    background-color: rgba(21 , 54 , 74 , 0.71);
 
     .line{
+      position: relative;
+      margin: 0;
+      top: 5%;
+      left: 2%;
       margin-right: 10vw;
-      border-top-width: 8px;
+      border-top-width: 0.8vw;
       border-top-color: #9e8f74;
     }
 
     h1{
       opacity: 1;
-      padding-left: 1rem;    
-      color: #fff;  
+      position: relative;
+      margin-top: 2vh;
+      padding-left: 1vw;
+      color: #fff;
+      font-size: 2.5vw;
     }
 
     
@@ -138,10 +145,10 @@
 
   .scrollNoti{
     display: flex;
-    position: fixed;
+    position: absolute;
     bottom: 5vh;
     right: 50vw;
-    font-size: 1.8rem;
+    font-size: 1.2vw;
     animation: 1.8s updown ease-in-out infinite ;
     user-select: none;
   
@@ -161,12 +168,12 @@
 
 
 .content{
-	position: relative;
-  background-color: #fff;
-    // margin-top: 10rem;
-	border-top: 10px solid rgba(43,45,127,1);
-	padding: 0;	
-	margin: 0;
+	// position: relative;
+  // background-color: #fff;
+  // margin-top: 10rem;
+	// border-top: 10px solid rgba(43,45,127,1);
+	// padding: 0;	
+	// margin: 0;
 	// transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
 	// transform: translate3d(0, 20px, 0) scale(.75);
   // opacity: 0;
@@ -203,6 +210,7 @@
     padding: 10rem;
     padding-right: 15vw;
     padding-left: 15vw;
+    padding-bottom: 38vh;
   }
 
   .missionContent::first-letter{

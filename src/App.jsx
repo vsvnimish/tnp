@@ -3,8 +3,8 @@ import { Switch, Route} from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './Structure/Footer';
-import Department from "./Pages/Department";
-import Faculties from "./Pages/Faculties";
+import Programs from "./Pages/Programs";
+import Clubs from "./Pages/Clubs";
 import WhyRecruitUs from "./Pages/WhyRecruitUs";
 import Home from "./Pages/HomePage";
 import ErrorPage from './Pages/404';
@@ -24,7 +24,7 @@ function App() {
     <div className="base" >
 
       <CssBaseline/>
-
+      
       <Navbar/>
 
       <div className="mainBody">
@@ -33,9 +33,9 @@ function App() {
             <Route exact path='/' render={props => (<Home/>)}/>
             <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs />) }
             />
-            <Route path='/Department' render={props => (<Department />)} 
+            <Route path='/Programs' render={props => (<Programs />)} 
             />
-            <Route path='/Faculties' render={props => (<Faculties />)} 
+            <Route path='/Clubs' render={props => (<Clubs />)} 
             />
   
         </Switch>
