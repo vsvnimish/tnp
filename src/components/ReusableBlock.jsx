@@ -9,16 +9,16 @@ function ReusableCard(props){
          <h3 className="reusableHeading"> {props.heading} </h3>
       </div>
       <div className="reusableCard"> 
-      <blockquote><p class="quotation"> {props.content}</p>
-      <footer> {props.writer}</footer>
-      </blockquote>
+        <blockquote><p class="quotation"> {props.content}</p>
+          <footer> {props.writer}</footer>
+        </blockquote>
       </div>
   </div>
       :   <div className="reusableBlock">
       <div className="reusableCard"> 
-      <blockquote><p class="quotation"> {props.content}</p>
-      <footer> {props.writer}</footer>
-      </blockquote>
+        <blockquote><p class="quotation"> {props.content}</p>
+          <footer> {props.writer}</footer>
+        </blockquote>
       </div>
       <div className="reusableHeadingBlock">
         {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
