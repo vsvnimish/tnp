@@ -2,8 +2,8 @@
 $hamburger-layer-width: 10px;
 $hamburger-layer-height: 1.5px;
 $hamburger-layer-spacing: 1px;
-$hamburger-padding-x : 0px;
-$hamburger-padding-y : 0px;
+$hamburger-padding-x: 0px;
+$hamburger-padding-y: 0px;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin barTabs {
@@ -13,21 +13,21 @@ $hamburger-padding-y : 0px;
   padding-right: 5%;
 }
 
-.navBase{
+.navBase {
   width: 100%;
   position: fixed;
   z-index: 10;
-  max-height: 15vh;
+  // max-height: 15vh;
 }
 
 .navBar {
   @include barTabs;
-  height: 10vh;
-  background-color: transparent ;
+  height: 8vh;
+  background-color: white;
 
   .logo {
     position: fixed;
-    height: 8vh;
+    height: 6vh;
     justify-content: start;
     align-items: center;
     margin-left: 5%;
@@ -51,7 +51,7 @@ $hamburger-padding-y : 0px;
     }
   }
 
-  .ham{
+  .ham {
     cursor: default;
   }
 
@@ -60,24 +60,22 @@ $hamburger-padding-y : 0px;
     right: 5%;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    color: black;
+    color: #2e3c7f;
     grid-gap: 2rem;
     list-style: none;
     text-align: center;
     z-index: 10;
 
-
     .dropdown {
-      margin-top: 2rem;
       border-radius: 10%;
       perspective: 1000px;
-      font-size: 2rem;
+      font-size: 1.7rem;
       padding: 1rem;
       z-index: 100;
       transform: translateY(-600px);
       animation: 1s slideIn ease-in-out forwards 0s;
       &:hover {
-        background-color: rgba(207, 207, 207, 0.6);
+        // background-color: rgba(207, 207, 207, 0.6);
         cursor: pointer;
       }
 
@@ -85,7 +83,7 @@ $hamburger-padding-y : 0px;
         display: block;
       }
 
-      .tabIcon{
+      .tabIcon {
         height: 2.5rem;
         margin-right: 1rem;
         font-size: 2.5rem;
@@ -112,7 +110,6 @@ $hamburger-padding-y : 0px;
           &:hover {
             background-color: #c1c1c5;
           }
-
         }
 
         &:hover {
@@ -143,7 +140,7 @@ $hamburger-padding-y : 0px;
       transition: all 0.5s ease;
     }
 
-    .logo{
+    .logo {
       display: none;
     }
 
@@ -157,7 +154,7 @@ $hamburger-padding-y : 0px;
 }
 
 .activeA {
-  background-color: #ffffff ;
+  background-color: #ffffff;
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
 
@@ -167,7 +164,6 @@ $hamburger-padding-y : 0px;
     opacity: 1;
   }
 }
-
 
 @keyframes translateX {
   0% {
@@ -185,30 +181,28 @@ $hamburger-padding-y : 0px;
   }
 }
 
-
 .naviTab {
   display: -webkit-box;
 }
 
-
 .tabTitle {
   position: relative;
   display: flex;
+  font-weight: 600;
 }
 
 .tabTitle::after {
-	position: absolute;
-	content: "";
-	width: 0%;
-	height: 4px;
-	background-color: whitesmoke;
-	left: 50%;
-	bottom: -10px;
-	transition: all 0.4s ease-in-out;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #2e3b7fd2;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
 }
 
 .naviTab:hover .tabTitle::after {
-	width: 100%;
-	left: 0;
+  width: 100%;
+  left: 0;
 }
-
