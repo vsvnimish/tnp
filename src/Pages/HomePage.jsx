@@ -73,7 +73,7 @@ export default function HomePage() {
                 imgSrc="https://images-ext-1.discordapp.net/external/1CnMkqZMSH_K0lNVZPLhboBu-8x6JSb5Hixk0HRsnvw/https/ocs.iith.ac.in/static/media/directorsdesk.bb13dd37.jpg?width=501&height=450"
                 altText="Director"
             />
-            <ReusableCard 
+                <ReusableCard 
                 isLeftAlign={false}
                 haveLogo={true}
                 heading="Message From TPO"
@@ -89,24 +89,13 @@ export default function HomePage() {
                     on developing projects & industry relevant skills."
                 imgSrc="https://images-ext-1.discordapp.net/external/Eld7F0Wj94n5lzFm6tRzx6gd96ikkZX1a75dfitylIU/https/iiitr.ac.in/assets/images/faculty/cse/sadhana.webp"
                 altText="tpo"
-            />
-        </div>
-            {/* <div className="content">
-	            <div>
-                    <div className="missionHead" id="mission" >
-                        <h1 className="heading">
-                            Mission and Philosophy
-                        </h1>
-                    </div>
-                    <hr className="line" />
+                />
+            </div>
+            
 
-                    <p className="missionContent" >
-                        {Mission}
-                    </p>
-                </div>
-            </div> */}
+            </div>   
 
-//         <div
+//      <div
 //           className="scrollNoti"
 //           onClick={() => {
 //             document
@@ -132,6 +121,6 @@ export default function HomePage() {
 //         </div>
 //       </div>
 
-    </div>
+//   </div>
   );
 }
