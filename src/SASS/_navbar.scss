@@ -23,7 +23,7 @@ $hamburger-padding-y: 0px;
 .navBar {
   @include barTabs;
   height: 8vh;
-  background-color: white;
+  background-color: transparent;
 
   .logo {
     position: fixed;

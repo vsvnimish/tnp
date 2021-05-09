@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
@@ -71,7 +72,7 @@ export default function HomePage() {
                 imgSrc="https://images-ext-1.discordapp.net/external/1CnMkqZMSH_K0lNVZPLhboBu-8x6JSb5Hixk0HRsnvw/https/ocs.iith.ac.in/static/media/directorsdesk.bb13dd37.jpg?width=501&height=450"
                 altText="Director"
             />
-            <ReusableCard 
+                <ReusableCard 
                 isLeftAlign={false}
                 haveLogo={true}
                 heading="Message From TPO"
