@@ -14,7 +14,7 @@ const Footer = (props) => {
                     <div className="quickLinks"  > <h1>QUICK LINKS</h1></div>
                     <div className="contact"  > <h1>CONTACT US</h1></div>
                     <div className="connect"  >
-                        <h1>LETS CONNECT</h1>
+                        <h1>Social Media</h1>
                         <Social/>
                     </div>
                 </div>
