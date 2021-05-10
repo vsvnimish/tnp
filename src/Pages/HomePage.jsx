@@ -49,12 +49,12 @@ export default function HomePage() {
                 <h1>Updates</h1>
             </div>
 
-            <div className = "scrollNoti" onClick={()=>{document.getElementById('mission').scrollIntoView({ behavior: 'smooth' })}} >
+            <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollTO').scrollIntoView({ behavior: 'smooth' })}} >
                 <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
             </div>
                 
         </div>
-        <div className="recruitUs">
+        <div className="recruitUs" id="scrollTO" >
             <ReusableCard 
                 isLeftAlign={true}
                 haveLogo={true}
