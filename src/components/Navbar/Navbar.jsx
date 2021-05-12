@@ -55,11 +55,13 @@ function ScrollTop(props) {
 export default function Navbar(props) {
   const history = useHistory();
   const [navState, setnavState] = useState(" ");
+  const [navAOS, setAOS] = useState("fade-down");
   const [openBar, setopenBar] = useState(false);
 
   const changeNavBack = () => {
     if (window.scrollY > 20) {
       setnavState("activeA");
+      setAOS(" ");
     } else {
       setnavState(" ");
     }
@@ -92,7 +94,7 @@ export default function Navbar(props) {
 
   return (
     <div className="navBase">
-      <Toolbar className={`navBar ${navState}`}>
+      <Toolbar className={`navBar ${navState}`} data-aos={navAOS}>
         <img
           src={Logo}
           alt="Logo"

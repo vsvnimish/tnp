@@ -1,44 +1,49 @@
 
 import React from 'react'
-import Heading from '../components/headingAnnimation';
 import $ from 'jquery';
 import {AboutIIITR, Mission} from '../Content/Home'
+import {ReactComponent as Logo} from "../images/ocs_logo.svg"
 import ReusableCard from '../components/ReusableBlock';
 import ReusableBlock2 from '../components/ReusableBlock2';
-// import Img from '../images/back.jpg'
+import BackImg from '../images/cover.webp'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+AOS.init({
+    easing: 'ease-in-out', // default easing for AOS animations
+    duration: 1000,
+    delay: 20,
+});
+
 
 export default function HomePage() {
-  // var scrollToNew = false
-
-  // function actOnScroll(){
-
-  //     if(window.scrollY === 0 ){
-  //         $('.top, .content').removeClass('scrolled');
-  //         scrollToNew = false;
-  //     }else if(window.scrollY > 150){
-  //         $('.top, .content').addClass('scrolled');
-
-  //         if(!scrollToNew){
-  //             window.scrollTo({
-  //                 top: 14,
-  //                 behavior: 'smooth'
-  //             });
-  //             scrollToNew = true;
-  //         }
-  //     }
-
-  // }
-
-  // window.addEventListener("scroll", actOnScroll);
 
   return (
     <div className="homepage">
       <div className="top">
-            {/* <Heading
-                        cla="concept-one"
-                        heading="Welcome To OCS-IIITR"
-                    /> */}
-            <div className="aboutIIITR">
+
+            <img src={BackImg} alt="website logo" className="backImage" />
+
+            <div className="topComponents" >
+
+                <div className="HomepageCenter" data-aos="zoom-in" >
+                    <Logo className="logo" />
+
+                    <div className="HomepageLogoText" data-aos="fade-right"  >
+                        <h1>OCS</h1>
+                    </div>
+
+                </div>
+
+                <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollTO').scrollIntoView({ behavior: 'smooth' })}} >
+                    <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
+                </div>
+
+                </div>
+            
+            {/* <div className="aboutIIITR">
                 <h1 className="aboutHead">About Us</h1>
 
                 <p>{AboutIIITR}</p>
@@ -47,14 +52,15 @@ export default function HomePage() {
             <div className="updates">
                 <hr className="line" />
                 <h1>Updates</h1>
-            </div>
-
-            <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollTO').scrollIntoView({ behavior: 'smooth' })}} >
-                <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
-            </div>
+            </div> */}
                 
         </div>
         <div className="recruitUs" id="scrollTO" >
+            
+            <div className="aboutUs" data-aos="fade-up" >
+                <h1>About Us</h1>
+                <p>{AboutIIITR}</p>
+            </div>
             <ReusableCard 
                 isLeftAlign={true}
                 haveLogo={true}
