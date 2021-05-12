@@ -1,7 +1,6 @@
 
 import React from 'react'
-import $ from 'jquery';
-import {AboutIIITR, Mission} from '../Content/Home'
+import {AboutIIITR} from '../Content/Home'
 import {ReactComponent as Logo} from "../images/ocs_logo.svg"
 import ReusableCard from '../components/ReusableBlock';
 import ReusableBlock2 from '../components/ReusableBlock2';

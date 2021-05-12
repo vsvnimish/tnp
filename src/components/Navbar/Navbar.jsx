@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import BarItems from "../../Content/BarItems";
 import { useHistory } from "react-router-dom";
 import Logo from "../../images/ocs_logo.svg";
-import $ from "jquery";
-import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/core/styles";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
@@ -55,13 +53,11 @@ function ScrollTop(props) {
 export default function Navbar(props) {
   const history = useHistory();
   const [navState, setnavState] = useState(" ");
-  const [navAOS, setAOS] = useState("fade-down");
   const [openBar, setopenBar] = useState(false);
 
   const changeNavBack = () => {
     if (window.scrollY > 20) {
       setnavState("activeA");
-      setAOS(" ");
     } else {
       setnavState(" ");
     }
@@ -94,7 +90,7 @@ export default function Navbar(props) {
 
   return (
     <div className="navBase">
-      <Toolbar className={`navBar ${navState}`} data-aos={navAOS}>
+      <Toolbar className={`navBar ${navState}`} >
         <img
           src={Logo}
           alt="Logo"

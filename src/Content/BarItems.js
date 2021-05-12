@@ -1,4 +1,3 @@
-import uni from "../images/Icons/uniIcon.png";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 
