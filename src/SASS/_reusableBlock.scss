@@ -1,87 +1,83 @@
-.recruitUs{
-    position: relative;
-    min-height: 100vh;
+.recruitUs {
+  position: relative;
+  min-height: 100vh;
 }
 
 .reusableBlock {
-    background: #2e3c7fe3;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 10px 8px 10px #888888;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .reusableCard {
-    width: 65%;
-    padding: 35px;
-    margin: 40px;
-    font-size:medium;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 10px #888888;
+  width: 65%;
+  padding: 35px;
+  margin: 40px;
+  font-size: medium;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 10px #888888;
 }
 
 .reusableHeading {
-    color: white;
-    font-weight: 900;
-    padding: 20px;
-    margin: 40px;
+  color: #35166b;
+  font-weight: 900;
+  padding: 20px;
+  margin: 40px;
 }
 
 .reusableHeadingBlock {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .reusableHeadingImage {
-
-    height: 300px;
-    width: 300px;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: blue;
-
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
 }
 
-.quotation{
-    font-size: 20px;
-    //margin: 0 auto;
-    quotes: "\201C""\201D""\2018""\2019";
-    padding: 10px 20px;
-    line-height: 1.4;
-  }
-  
-  .quotation:before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: -10px;
-    position: relative;
-    top: 30px;
-    color: #ccc;
-    font-size: 3em;
-  }
-  .quotation::after {
-    content: close-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 10px;
-    position: relative;
-    top: 35px;
-    color: #ccc;
-    font-size: 3em;
-  }
-  footer{
-    margin:0;
-    text-align: right;
-    font-size: 1.5em;
-    font-style: italic;
-  }
+.quotation {
+  font-size: 20px;
+  //margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #ccc;
+  font-size: 3em;
+}
+footer {
+  margin: 0;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
+}
