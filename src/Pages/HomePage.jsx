@@ -75,11 +75,11 @@ export default function HomePage() {
             })}
  
         </div>
-        <div className="whyUsHeading">
+        {/* <div className="whyUsHeading">
             <h3 > Why us ??</h3>
-        </div>
+        </div> */}
 
-        <div className="whyUsContent">
+        {/* <div className="whyUsContent">
             {WhyUs.map((item)=>{
                 return(
                     <ReusableBlock2
@@ -88,7 +88,7 @@ export default function HomePage() {
                     />
                 )
             })}
-        </div>
+        </div> */}
             {/* <div className="content">
 	            <div>
                     <div className="missionHead" id="mission" >
