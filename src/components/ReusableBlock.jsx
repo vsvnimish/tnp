@@ -3,26 +3,44 @@ import React from "react"
 function ReusableCard(props){
 
     return (
-      props.isLeftAlign ? <div className="reusableBlock">
+      props.isLeftAlign ? <div className="reusableMain" data-aos="fade-up" >
+
+      <div className="head" >
+        <h3 className="reusableHeading"> {props.heading}  </h3>
+        <hr className="lineBreak" />
+      </div>
+      <div className="reusableBlock" >
+
       <div className="reusableHeadingBlock">
         {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
-         <h3 className="reusableHeading"> {props.heading} </h3>
       </div>
       <div className="reusableCard"> 
-        <blockquote><p className="quotation"> {props.content}</p>
+        <blockquote><p className="quotation" data-aos="fade-right"> {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>
-  </div>
-      :   <div className="reusableBlock">
+
+      </div>
+      
+      </div>
+
+      :   <div className="reusableMain" data-aos="fade-up" >
+
+        <div className="head" >
+        <h3 className="reusableHeading leftHead"> {props.heading}  </h3>
+        <hr className="lineBreak leftLine" />
+      </div>
+
+        <div className="reusableBlock" >
       <div className="reusableCard"> 
-        <blockquote><p className="quotation"> {props.content}</p>
+        <blockquote className="leftBlock" ><p className="quotation" data-aos="fade-left"> {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>
       <div className="reusableHeadingBlock">
         {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
-         <h3 className="reusableHeading"> {props.heading} </h3>
+      </div>
+
       </div>
   </div>
     );
