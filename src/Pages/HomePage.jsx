@@ -59,9 +59,10 @@ export default function HomePage() {
                 <p>{AboutIIITR}</p>
             </div>
 
-            {Thoughts.map((item)=>{
+            {Thoughts.map((item, id)=>{
                 return(
                     <ReusableCard
+                        key={id}
                         isLeftAlign={item.isLeftAlign}
                         haveLogo={item.haveLogo}
                         heading={item.heading}
