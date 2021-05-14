@@ -39,3 +39,71 @@
 .connect{
     flex: 1;
 }
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10vw;
+    border-top: 1px solid #313646;
+    background-color: #181828 !important;
+    font-family: rubik;
+    color: #99a9b5;
+    padding-top: 0;
+    padding-bottom: 2vh;
+
+
+    .copyright{
+        padding: 1.5vh;
+        font-size: 1vw;
+    }
+
+}
+
+#footer-menu{
+    display: flex;
+    justify-content: center;
+}
+
+#footer-menu li {
+    display: inline-block;
+    padding: 0 21px;
+    position: relative;
+    line-height: 1;
+    font-size: 1vw;
+}
+
+#footer-menu li+li:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    font-size: 0;
+    border-left: 1px solid #232234;
+    border-right: 1px solid #333146;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+.facebook {
+    color: #4e64b5;
+}
+
+.twitter {
+    color: #00aced;
+}
+.instagram {
+    color: #9a8f62;
+}
+.youtube {
+    color: #c82929;
+}
+
+.telegram {
+    color: #2ca5e0;
+}
