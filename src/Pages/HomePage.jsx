@@ -1,8 +1,7 @@
 import React from 'react'
-import {AboutIIITR, Thoughts, WhyUs} from '../Content/Home.js'
+import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/ocs_logo.svg"
 import ReusableCard from '../components/ReusableBlock';
-import ReusableBlock2 from '../components/ReusableBlock2';
 import BackImg from '../images/cover.webp'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
