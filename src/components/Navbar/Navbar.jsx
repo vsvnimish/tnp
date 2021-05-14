@@ -55,6 +55,7 @@ function ScrollTop(props) {
 const Navbar = React.forwardRef((props, ref) => { 
   const history = useHistory();
   const [navState, setnavState] = useState(" ");
+  const [activeTab, setActiveTab] = useState(" ");
   const [navColor, setnav] = useState(" ");
   const [openBar, setopenBar] = useState(false);
 

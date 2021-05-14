@@ -20,10 +20,12 @@
     color: #fff;
     transition-delay: 1s;
     transition-timing-function: ease-out;
-    margin-top: 10vh;
-    
+    margin-top: 1vh;
+    margin-left: 2vw;
     h1{
-      font-size: 4vw;
+      font-size: 2.5vw;
+      user-select: none;
+      font-family: 'Mulish', sans-serif;
     }
   }
 

@@ -33,7 +33,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                     <Logo className="logo" />
 
                     <div className="HomepageLogoText" data-aos="fade-right"  >
-                        <h1>OCS</h1>
+                        <h1>Training and <br/>Placement Cell</h1>
                     </div>
 
                 </div>
