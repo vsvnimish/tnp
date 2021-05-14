@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 function ScrollTop(props) {
   const { children, window } = props;
   const classes = useStyles();
@@ -50,9 +51,11 @@ function ScrollTop(props) {
 // window: PropTypes.func,
 // };
 
-export default function Navbar(props) {
+
+const Navbar = React.forwardRef((props, ref) => { 
   const history = useHistory();
   const [navState, setnavState] = useState(" ");
+  const [navColor, setnav] = useState(" ");
   const [openBar, setopenBar] = useState(false);
 
   const changeNavBack = () => {
@@ -64,6 +67,12 @@ export default function Navbar(props) {
   };
 
   function clickDropDown(item) {
+
+    if(item.id!==1){
+      setnavState("activeA");
+    }else{
+      setnavState(" ");
+    }
     if (!item.drop) {
       history.push(item.route);
     }
@@ -86,11 +95,21 @@ export default function Navbar(props) {
     );
   }
 
+  React.useImperativeHandle(ref, () => {
+    return {
+      setNavState: (state)=>{
+        console.log("hi");
+        setnav(state)
+      }
+    };
+  });
+
+
   window.addEventListener("scroll", changeNavBack);
 
   return (
     <div className="navBase">
-      <Toolbar className={`navBar ${navState}`} >
+      <Toolbar className={`navBar ${navState} ${navColor}`} >
         <img
           src={Logo}
           alt="Logo"
@@ -155,4 +174,7 @@ export default function Navbar(props) {
       </ScrollTop>
     </div>
   );
-}
+});
+
+
+export default Navbar;

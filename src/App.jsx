@@ -15,6 +15,8 @@ function App() {
   const [screenSize, setScreenSize] = useState(window.screen.width);
   window.addEventListener('resize', ()=>{setScreenSize(window.screen.width)});
 
+  const ref = React.useRef(null);
+
   if(screenSize <=960){
     return (
       <ErrorPage/>
@@ -25,17 +27,17 @@ function App() {
 
       <CssBaseline />
       
-      <Navbar/>
+      <Navbar ref={ref} />
 
       <div className="mainBody">
         <Switch>
             
-            <Route exact path='/' render={props => (<Home/>)}/>
-            <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs />) }
+            <Route exact path='/' render={props => (<Home ref={ref}/>)}/>
+            <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs ref={ref}/>)} 
             />
-            <Route path='/Programs' render={props => (<Programs />)} 
+            <Route path='/Programs' render={props => (<Programs ref={ref} />)} 
             />
-            <Route path='/Clubs' render={props => (<ClubActivities />)} 
+            <Route path='/Clubs' render={props => (<ClubActivities ref={ref} />)} 
             />
   
         </Switch>

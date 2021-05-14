@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/ocs_logo.svg"
 import ReusableCard from '../components/ReusableBlock';
@@ -15,7 +15,11 @@ AOS.init({
 });
 
 
-export default function HomePage() {
+const HomePage = React.forwardRef((props, ref)=> {
+
+    useEffect(() => {
+        ref.current.setNavState(" ");
+    }, [ref])
 
   return (
     <div className="homepage">
@@ -105,6 +109,8 @@ export default function HomePage() {
             </div> */}
     </div>
   );
-}
+});
+
+export default HomePage;
 
 

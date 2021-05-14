@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import ReusableCard from '../components/ReusableBlock'
 
-export default function whyRecruitUs() {
+const whyRecruitUs = React.forwardRef((props, ref)=>{
+
+    useEffect(() => {
+        ref.current.setNavState("navColor");
+    }, [ref])
 
     return (
         <div className="recruitUs">
@@ -35,4 +39,7 @@ export default function whyRecruitUs() {
             />
         </div>
     )
-}
+});
+
+
+export default whyRecruitUs;

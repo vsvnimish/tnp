@@ -1,8 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Clubs from '../Content/Clubs'
 import ReusableCard from '../components/ReusableBlock'
 
-export default function faculties() {
+const faculties = React.forwardRef((props, ref)=> {
+
+    useEffect(() => {
+        ref.current.setNavState("navColor");
+    }, [ref])
     
     return (
         <div className="clubs"  >
@@ -20,4 +24,6 @@ export default function faculties() {
 
         </div>
     )
-}
+});
+
+export default faculties;
