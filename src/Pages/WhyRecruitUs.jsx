@@ -4,7 +4,7 @@ import ReusableCard from '../components/ReusableBlock'
 const whyRecruitUs = React.forwardRef((props, ref)=>{
 
     useEffect(() => {
-        ref.current.setNavState("navColor");
+        ref.current.setNavState("navColor", "2");
     }, [ref])
 
     return (

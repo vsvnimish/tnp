@@ -212,6 +212,17 @@ $hamburger-padding-y: 0px;
   left: 0;
 }
 
+.activeTab{
+  .tabTitle{
+    color: white;
+  }
+  
+  .tabTitle::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .navColor{
   background-color: rgba(15,0,41,0.9) !important;
 }

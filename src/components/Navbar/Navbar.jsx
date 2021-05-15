@@ -46,18 +46,13 @@ function ScrollTop(props) {
   );
 }
 
-// ScrollTop.propTypes = {
-// children: PropTypes.element.isRequired,
-// window: PropTypes.func,
-// };
-
 
 const Navbar = React.forwardRef((props, ref) => { 
   const history = useHistory();
   const [navState, setnavState] = useState(" ");
-  const [activeTab, setActiveTab] = useState(" ");
   const [navColor, setnav] = useState(" ");
   const [openBar, setopenBar] = useState(false);
+
 
   const changeNavBack = () => {
     if (window.scrollY > 20) {
@@ -96,11 +91,21 @@ const Navbar = React.forwardRef((props, ref) => {
     );
   }
 
+  function addActiveClass(tab){
+    for(var i=1; i<=BarItems.length; i++){
+      if(i!==parseInt(tab)){
+        document.getElementById(i).classList.remove("activeTab");
+      }else{
+        document.getElementById(tab).classList.add("activeTab");
+      }
+    }
+  }
+
   React.useImperativeHandle(ref, () => {
     return {
-      setNavState: (state)=>{
-        console.log("hi");
-        setnav(state)
+      setNavState: (state, tab)=>{
+        setnav(state);
+        addActiveClass(tab);
       }
     };
   });
@@ -139,7 +144,7 @@ const Navbar = React.forwardRef((props, ref) => {
                   clickDropDown(item);
                 }}
               >
-                <div className="naviTab">
+                <div id={item.id} className="naviTab">
                   <div className="tabTitle">{item.heading}</div>
                   {item.drop ? <ArrowDropDownIcon /> : null}
                 </div>

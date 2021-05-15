@@ -18,7 +18,7 @@ AOS.init({
 const HomePage = React.forwardRef((props, ref)=> {
 
     useEffect(() => {
-        ref.current.setNavState(" ");
+        ref.current.setNavState(" ", "1");
     }, [ref])
 
   return (

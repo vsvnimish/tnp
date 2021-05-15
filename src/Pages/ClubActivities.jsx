@@ -5,14 +5,15 @@ import ReusableCard from '../components/ReusableBlock'
 const faculties = React.forwardRef((props, ref)=> {
 
     useEffect(() => {
-        ref.current.setNavState("navColor");
+        ref.current.setNavState("navColor", "4");
     }, [ref])
     
     return (
         <div className="clubs"  >
 
             {Clubs.map(
-                club => <ReusableCard 
+                (club,id) => <ReusableCard 
+                    key={id}
                     isLeftAlign={club.isLeftAlign}
                     heading={club.heading}
                     content={club.content}

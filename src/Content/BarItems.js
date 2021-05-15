@@ -25,9 +25,9 @@ const BarItems = [
   },
   {
     id: 4,
-    heading: "Contact",
+    heading: "Clubs",
     description: "Login to create new polls or to submit a response.",
-    route: "/contact",
+    route: "/Clubs",
   },
 ];
 
