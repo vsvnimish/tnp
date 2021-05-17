@@ -20,11 +20,12 @@
             text-align: center;
         }
 
-        div{
+        .footerItems{
             display: flex;
             flex: 1;
             flex-direction: column;
             align-items: flex-start;
+            padding-right: 4vw;
         }
 
         .logoSpace{
@@ -64,7 +65,11 @@
     left: 0;
 }
 
-.contactCards{
+.contentCards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
     margin-bottom: 2vh;
     font-family: 'Rubik', sans-serif;
     font-size: 1vw;
@@ -73,6 +78,10 @@
     .phoneNum{
         display: inline !important;
     }
+}
+
+.map {
+    padding-top: 2vh;
 }
 
 .footer-bottom {

@@ -2,7 +2,8 @@ import React from 'react';
 import '../SASS/_social.scss';
 import './_footer.scss';
 import Logo from '../images/logo/logo.png';
-
+import Map from '../components/Map';
+import {address, Contacts}  from '../Content/footerInfo';
 
 function Footer(props){
 
@@ -11,43 +12,48 @@ function Footer(props){
             <footer>
                 <div className="footer">
 
-                    <div className="logoSpace">
+                    <div className="logoSpace footerItems">
                         <img src={Logo} alt="Logo"  className="logoF" />
                     </div>
 
-                    <div className="address"  > 
+                    <div className="address footerItems"  > 
                         <h3 className="footer-title" >Address</h3>
+                        <div className="contentCards">
+                            <div>
+                                Temporary Campus:
+                            </div>
+                            <div>
+                                {address}
+                            </div>
+                            <div className="map"  >
+                                <Map />
+                            </div>
+                            
+                        </div>
                     </div>
 
-                    <div className="quickLinks"  > 
+                    <div className="quickLinks footerItems"  > 
                         <h3 className="footer-title">Quick Links</h3>
                         <div>
 
                         </div>
                     </div>
 
-                    <div className="contact"  >
+                    <div className="contact footerItems"  >
                         <h3 className="footer-title" >Conatct Us</h3>
-                        <div className="contactCards" >
-                            <div>Sadhana Jha (Faculty Incharge)</div>
-                            <div  className="phoneNum"  ><i class="fas fa-envelope" aria-hidden="true"></i> : *Placement cell mail ID*</div>
-                            <div className="phoneNum"><i class="fa fa-phone" aria-hidden="true"></i> : +91 8768779475</div>
-                        </div>
-                        <div className="contactCards" >
-                            <div>Aditya Agrawal (Student Coordinator)</div>
-                            <div  className="phoneNum"  ><i class="fas fa-envelope" aria-hidden="true"></i>  : *Placement cell mail ID*</div>
-                            <div className="phoneNum"><i class="fa fa-phone" aria-hidden="true"></i> : +91 9785559273</div>
-                        </div>
-                        <div className="contactCards" >
-                            <div>Reethu Sanagala (Student Coordinator)</div>
-                            <div  className="phoneNum"  ><i class="fas fa-envelope" aria-hidden="true"></i>  : *Placement cell mail ID*</div>
-                            <div className="phoneNum"><i class="fa fa-phone" aria-hidden="true"></i> : +91 8919239558</div>
-                        </div>
-                        <div className="contactCards" >
-                            <div>IIIT, Raichur</div>
-                            <div  className="phoneNum"  ><i class="fas fa-envelope" aria-hidden="true"></i>  : info@iiitr.ac.in</div>
-                            <div className="phoneNum" ><i class="fa fa-phone" aria-hidden="true"></i> : 040 - 2301 6002</div>
-                        </div>
+
+                        {
+                            Contacts.map((item)=>{
+                                return(
+                                    <div className="contentCards" >
+                                        <div>{item.name}</div>
+                                        <a  className="phoneNum" href={`mailto:${item.email}`} ><i class="fas fa-envelope" aria-hidden="true"></i> : {item.email}</a>
+                                        <a className="phoneNum" href={`tel: ${item.phoneNum}`}  ><i class="fa fa-phone" aria-hidden="true"></i> : {item.phoneNum}</a>
+                                    </div>
+                                )
+                            })
+                        }
+                        
                     </div>
                 </div>
                 
