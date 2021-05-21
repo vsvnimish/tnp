@@ -18,16 +18,17 @@ const BarItems = [
   },
   {
     id: 3,
-    heading: "Programs at IIITR",
+    heading: "Brochure",
     description: "View Responses to the polls created by you.",
     icon: <SchoolIcon className="tabIcon" />,
-    route: "/Programs",
+    route: "/",
   },
   {
     id: 4,
-    heading: "Clubs",
+    heading: "Contact Us",
     description: "Login to create new polls or to submit a response.",
-    route: "/Clubs",
+    link: "https://iiitr.ac.in/contact",
+    route: "/",
   },
 ];
 

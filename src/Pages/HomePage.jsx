@@ -3,6 +3,7 @@ import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/ocs_logo.svg"
 import ReusableCard from '../components/ReusableBlock';
 import BackImg from '../images/cover.webp'
+import WhyRecruitUs from "./WhyRecruitUs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -77,6 +78,12 @@ const HomePage = React.forwardRef((props, ref)=> {
                     />
                 )
             })}
+
+            <div id="recruit" ></div>
+
+            <h1 className="recruitHead" >Why Recruit Us</h1>
+
+            <WhyRecruitUs/>
  
         </div>
         {/* <div className="whyUsHeading">

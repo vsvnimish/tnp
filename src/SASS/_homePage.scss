@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./media";
 
 * {
   box-sizing: border-box;
@@ -236,19 +237,50 @@
   display: flex;
 }
 
+.recruitHead{
+  text-align: center;
+  color: rgba(53, 22, 107, 1);
+  margin: 100px 0px 50px 0px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
 .aboutUs{
-  padding: 10vw;
+  padding-top: 10vw;
   padding-bottom: 0;
+  margin-bottom: 100px;
 
   h1{
-    font-size: 2.5vw;
+    font-size: 40px;
     color: rgba(53, 22, 107, 1);
     border-bottom: 0.3vw solid;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
   }
 
   p{
-    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     padding-top: 1vh;
+
   }
+}
+
+@include mobile {
+  
+  .aboutUs{
+
+    h1{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  }
+}
+
+.recruitUs{
+  margin-right: 10vw;
+  margin-left: 10vw;
 }

@@ -15,7 +15,7 @@ function ReusableCard(props){
         {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
       </div>
       <div className="reusableCard"> 
-        <blockquote><p className="quotation" data-aos="fade-right"> {props.content}</p>
+        <blockquote><p className="quotation" > {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>
@@ -26,14 +26,14 @@ function ReusableCard(props){
 
       :   <div className="reusableMain" data-aos="fade-up" >
 
-        <div className="head" >
-        <h3 className="reusableHeading leftHead"> {props.heading}  </h3>
-        <hr className="lineBreak leftLine" />
+        <div className="head rightHead" >
+        <h3 className="reusableHeading"> {props.heading}  </h3>
+        <hr className="lineBreak" />
       </div>
 
         <div className="reusableBlock" >
       <div className="reusableCard"> 
-        <blockquote className="leftBlock" ><p className="quotation" data-aos="fade-left"> {props.content}</p>
+        <blockquote className="leftBlock" ><p className="quotation"> {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>

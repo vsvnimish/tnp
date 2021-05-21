@@ -3,12 +3,12 @@ import ReusableCard from '../components/ReusableBlock'
 
 const whyRecruitUs = React.forwardRef((props, ref)=>{
 
-    useEffect(() => {
-        ref.current.setNavState("navColor", "2");
-    }, [ref])
+    // useEffect(() => {
+    //     ref.current.setNavState("navColor", "2");
+    // }, [ref])
 
     return (
-        <div className="recruitUs">
+        <div >
             <ReusableCard 
                 isLeftAlign={true}
                 haveLogo={false}

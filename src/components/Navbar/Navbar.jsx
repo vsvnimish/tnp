@@ -69,7 +69,11 @@ const Navbar = React.forwardRef((props, ref) => {
     }else{
       setnavState(" ");
     }
-    if (!item.drop) {
+
+    if(item.id === 2){
+      document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });
+    }
+    else if (!item.drop) {
       history.push(item.route);
     }
 

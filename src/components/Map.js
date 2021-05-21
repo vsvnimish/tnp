@@ -13,11 +13,11 @@ const MapContainer = () => {
     const defaultCenter = {
         lat: 16.25049000723698, lng: 77.36485465756208
     }
-    
+
     const locations = [
         {
             name: "Gov",
-            location: { 
+            location: {
             lat: 16.25049000723698,
             lng: 77.36485465756208
             },
