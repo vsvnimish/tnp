@@ -28,7 +28,7 @@ const BarItems = [
     heading: "Contact Us",
     description: "Login to create new polls or to submit a response.",
     link: "https://iiitr.ac.in/contact",
-    route: "/",
+    route: "https://iiitr.ac.in/contact",
   },
 ];
 
