@@ -14,7 +14,7 @@ const BarItems = [
     heading: "Why Recruit Us",
     description: "Vote too already existing poll.",
     icon: <WorkIcon className="tabIcon" />,
-    route: "/WhyRecruitUs",
+    route: "/",
   },
   {
     id: 3,
@@ -27,7 +27,6 @@ const BarItems = [
     id: 4,
     heading: "Contact Us",
     description: "Login to create new polls or to submit a response.",
-    link: "https://iiitr.ac.in/contact",
     route: "https://iiitr.ac.in/contact",
   },
 ];

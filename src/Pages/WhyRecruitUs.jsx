@@ -9,6 +9,7 @@ const whyRecruitUs = React.forwardRef((props, ref)=>{
 
     return (
         <div >
+        
             <ReusableCard 
                 isLeftAlign={true}
                 haveLogo={false}
@@ -23,6 +24,9 @@ const whyRecruitUs = React.forwardRef((props, ref)=>{
                     students are able to finish their courses quite early and focus
                     on developing projects & industry relevant skills."
             />
+
+            <div id="recruit2" ></div>
+
             <ReusableCard 
                 isLeftAlign={false}
                 heading="The coders, thinkers and tinkerers"
@@ -37,6 +41,8 @@ const whyRecruitUs = React.forwardRef((props, ref)=>{
                     technologies like Python, C++, Java, Javascript, flutter, Go, flask,
                     NoSQL, SQL, Django, Node, Vue, React, Docker etc.)"
             />
+
+            <div id="recruit3" ></div>
         </div>
     )
 });

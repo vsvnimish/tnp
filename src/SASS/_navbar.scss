@@ -25,6 +25,7 @@ $hamburger-padding-y: 0px;
   @include barTabs;
   height: 8vh;
   background-color: transparent;
+  transition: all 0.8s ease;
 
   .logo {
     position: fixed;
@@ -70,7 +71,7 @@ $hamburger-padding-y: 0px;
     .dropdown {
       border-radius: 10%;
       perspective: 1000px;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       padding: 1rem;
       z-index: 100;
       //transform: translateY(-600px);
@@ -197,7 +198,7 @@ $hamburger-padding-y: 0px;
   position: absolute;
   content: "";
   width: 0%;
-  height: 4px;
+  height: 2.5px;
   background-color: #3b38e7d2;
   left: 50%;
   bottom: -10px;

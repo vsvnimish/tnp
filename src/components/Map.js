@@ -48,24 +48,3 @@ const MapContainer = () => {
 
 export default MapContainer;
 
-// export class MapContainer extends Component {
-//   render() {
-//     return (
-//       <Map
-//         google={this.props.google}
-//         zoom={1}
-//         style={mapStyles}
-//         initialCenter={
-//           {
-//             lat: 20.395220,
-//             lng: 78.128067,
-//           }
-//         }
-//       />
-//     );
-//   }
-// }
-
-// export default GoogleApiWrapper({
-//   apiKey: 'AIzaSyBNADRqvQFMYa0OZc0RoH5jPHbz5bKEjdM'
-// })(MapContainer);

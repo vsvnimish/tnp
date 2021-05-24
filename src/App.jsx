@@ -33,8 +33,8 @@ function App() {
         <Switch>
             
             <Route exact path='/' render={props => (<Home ref={ref}/>)}/>
-            <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs ref={ref}/>)} 
-            />
+            {/* <Route path='/WhyRecruitUs' render={props => (<WhyRecruitUs ref={ref}/>)} 
+            /> */}
             <Route path='/Programs' render={props => (<Programs ref={ref} />)} 
             />
             <Route path='/Clubs' render={props => (<ClubActivities ref={ref} />)} 

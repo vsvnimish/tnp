@@ -79,11 +79,14 @@ const HomePage = React.forwardRef((props, ref)=> {
                 )
             })}
 
-            <div id="recruit" ></div>
+            <div>
+            <div id="recruit" style={{height:"2vh"}} ></div>
 
-            <h1 className="recruitHead" >Why Recruit Us</h1>
+            <h1 className="recruitHead" onClick={()=>{console.log(document.getElementById('recruit'))}} >Why Recruit Us</h1>
 
             <WhyRecruitUs/>
+
+            </div>
  
         </div>
         {/* <div className="whyUsHeading">

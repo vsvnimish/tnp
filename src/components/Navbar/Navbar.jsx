@@ -53,6 +53,15 @@ const Navbar = React.forwardRef((props, ref) => {
   const [navColor, setnav] = useState(" ");
   const [openBar, setopenBar] = useState(false);
 
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
   const changeNavBack = () => {
     if (window.scrollY > 20) {
@@ -60,9 +69,18 @@ const Navbar = React.forwardRef((props, ref) => {
     } else {
       setnavState(" ");
     }
+
+    if(window.location.pathname === '/')
+    if( isInViewport(document.getElementById('recruit')) || isInViewport(document.getElementById('recruit2'))  || isInViewport(document.getElementById('recruit3')) ){
+      addActiveClass("2");
+    }else{
+      addActiveClass("1");
+    }
+  
   };
 
   function clickDropDown(item) {
+    
 
     if(item.id!==1){
       setnavState("activeA");
@@ -70,11 +88,14 @@ const Navbar = React.forwardRef((props, ref) => {
       setnavState(" ");
     }
 
-    if(item.id === 2){
+    if(item.id === 1){
+      history.push(item.route);
+    }
+    else if(item.id === 2){
       document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });
     }
-    else if (!item.drop) {
-      history.push(item.route);
+    else {
+      window.open(item.route);
     }
 
     if (openBar) {
@@ -116,6 +137,7 @@ const Navbar = React.forwardRef((props, ref) => {
 
 
   window.addEventListener("scroll", changeNavBack);
+
 
   return (
     <div className="navBase">
