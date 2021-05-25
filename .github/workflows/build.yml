@@ -34,7 +34,7 @@ jobs:
           node-version: 14.x
 
       - name: Build project
-        run: npm run build
+        run: PUBLIC_URL=/web npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
