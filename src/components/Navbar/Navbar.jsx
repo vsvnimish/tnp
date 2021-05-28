@@ -71,7 +71,8 @@ const Navbar = React.forwardRef((props, ref) => {
     }
 
     if(window.location.pathname === '/')
-    if( isInViewport(document.getElementById('recruit')) || isInViewport(document.getElementById('recruit2'))  || isInViewport(document.getElementById('recruit3')) ){
+    //if( isInViewport(document.getElementById('recruit')) || isInViewport(document.getElementById('recruit2'))  || isInViewport(document.getElementById('recruit3')) ){
+    if(window.scrollY >= 2100){  
       addActiveClass("2");
     }else{
       addActiveClass("1");
@@ -89,7 +90,7 @@ const Navbar = React.forwardRef((props, ref) => {
     }
 
     if(item.id === 1){
-      history.push(item.route);
+      document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
     }
     else if(item.id === 2){
       document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });

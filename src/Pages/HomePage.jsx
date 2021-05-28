@@ -23,7 +23,7 @@ const HomePage = React.forwardRef((props, ref)=> {
     }, [ref])
 
   return (
-    <div className="homepage">
+    <div className="homepage" id="home">
       <div className="top">
 
             <img src={BackImg} alt="website logo" className="backImage" />
@@ -82,7 +82,7 @@ const HomePage = React.forwardRef((props, ref)=> {
             <div>
             <div id="recruit" style={{height:"2vh"}} ></div>
 
-            <h1 className="recruitHead" onClick={()=>{console.log(document.getElementById('recruit'))}} >Why Recruit Us</h1>
+            <h1 className="recruitHead" data-aos="fade-up" >Why Recruit Us</h1>
 
             <WhyRecruitUs/>
 
