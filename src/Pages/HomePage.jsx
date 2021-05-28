@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import {AboutIIITR, Thoughts} from '../Content/Home.js'
-import {ReactComponent as Logo} from "../images/ocs_logo.svg"
+import {ReactComponent as Logo} from "../images/logo.svg"
 import ReusableCard from '../components/ReusableBlock';
-import BackImg from '../images/cover.webp'
+import BackImg from '../images/image1.jpeg'
 import WhyRecruitUs from "./WhyRecruitUs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,6 +36,8 @@ const HomePage = React.forwardRef((props, ref)=> {
                     <div className="HomepageLogoText" data-aos="fade-right"  >
                         <h1>Training and <br/>Placement Cell</h1>
                     </div>
+
+                    <h1 className="iiitr" data-aos="fade-bottom" >Indian Institute Of Information Technology, Raichur</h1>
 
                 </div>
 
@@ -82,7 +84,7 @@ const HomePage = React.forwardRef((props, ref)=> {
             <div>
             <div id="recruit" style={{height:"2vh"}} ></div>
 
-            <h1 className="recruitHead" data-aos="fade-up" >Why Recruit Us</h1>
+            <h1 className="recruitHead" data-aos="fade-up"  href='/somefile.txt' download >Why Recruit Us</h1>
 
             <WhyRecruitUs/>
 

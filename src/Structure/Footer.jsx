@@ -32,11 +32,20 @@ function Footer(props){
                         </div>
                     </div>
 
-                    <div className="quickLinks footerItems"  > 
+                    <div className="footerItems"  > 
                         <h3 className="footer-title">Quick Links</h3>
-                        <div>
+                        <ul className="quickLinks" >
 
-                        </div>
+                            <li className="list" >
+                                <li class="fas fa-chevron-right rightIcon"></li>
+                                <a href="https://www.iiitr.ac.in/" >IIITR Website</a>
+                            </li>
+                            <li className="list" >
+                                <li class="fas fa-chevron-right rightIcon"></li>
+                                <a href="https://www.iiitr.ac.in/faculty.html" >Faculty Profiles</a>
+                            </li>
+                            
+                        </ul>
                     </div>
 
                     <div className="contact footerItems"  >
