@@ -38,7 +38,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                         <h6>Indian Institute Of Information Technology, Raichur</h6>
                     </div>
 
-                    <h1 className="iiitr" data-aos="fade-bottom" >Indian Institute Of Information Technology, Raichur</h1>
+            
 
                 </div>
 
