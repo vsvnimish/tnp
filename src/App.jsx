@@ -8,6 +8,7 @@ import ClubActivities from "./Pages/ClubActivities";
 // import WhyRecruitUs from "./Pages/WhyRecruitUs";
 import Home from "./Pages/HomePage";
 import ErrorPage from './Pages/404';
+import ContactUsCard from './components/ContactUsCard.jsx';
 
 
 function App() {
@@ -38,6 +39,13 @@ function App() {
             <Route path='/Programs' render={props => (<Programs ref={ref} />)} 
             />
             <Route path='/Clubs' render={props => (<ClubActivities ref={ref} />)} 
+            />
+
+            <Route path='/test' render={props => (<ContactUsCard ref={ref} 
+              name="Jatin"
+              phoneNum="9068334677"
+              email="cs19b1013@iiitr.ac.in"
+            />)} 
             />
   
         </Switch>

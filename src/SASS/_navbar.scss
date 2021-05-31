@@ -232,3 +232,19 @@ $hamburger-padding-y: 0px;
 .MuiFab-secondary{
   background-color: tomato !important;
 }
+
+.contacUsCardsHeading{
+
+  font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    color: #35166b;
+    font-weight: 900;
+    margin: 20px 20px 2px 20px;
+    text-align: start;
+}
+
+.contactUsCardDialog{
+
+  display: flex;
+  flex-direction: row;
+}
