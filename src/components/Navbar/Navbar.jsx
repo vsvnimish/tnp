@@ -9,10 +9,7 @@ import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import Dialog from '@material-ui/core/Dialog';
-import ContactUsCard from "../ContactUsCard"
 import FullScreenDialog from "../../Pages/FullScreenDialog";
-import { OpenInBrowser } from "@material-ui/icons";
 
 
 
