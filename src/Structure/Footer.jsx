@@ -72,7 +72,7 @@ function Footer(props){
                         <div >2020 © <a href="https://www.iiitr.ac.in/" > IIITR Raichur </a></div>
                     </div>
 
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                         <nav id="footer-navigation" className="site-navigation footer-navigation centered-box" role="navigation">
                             <ul id="footer-menu" className="nav-menu styled clearfix inline-inside">
                             <li key="1" id="menu-item-26" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="https://www.iiitr.ac.in/">Support</a></li>
@@ -80,7 +80,7 @@ function Footer(props){
                             <li  key="3" id="menu-item-28" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="https://www.iiitr.ac.in/">Email Us</a></li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> */}
 
                     <div className="col-md-3">
 
