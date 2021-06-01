@@ -1,0 +1,13 @@
+/* Scroll bar updated */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #27193E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cee6f7;
+}
