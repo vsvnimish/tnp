@@ -239,7 +239,7 @@ $hamburger-padding-y: 0px;
     font-size: 20px;
     color: #35166b;
     font-weight: 900;
-    margin: 20px 20px 2px 20px;
+    margin: 20px auto;
     text-align: start;
 }
 
@@ -247,4 +247,6 @@ $hamburger-padding-y: 0px;
 
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
 }

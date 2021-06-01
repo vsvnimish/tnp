@@ -11,6 +11,9 @@ import Zoom from "@material-ui/core/Zoom";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import Dialog from '@material-ui/core/Dialog';
 import ContactUsCard from "../ContactUsCard"
+import FullScreenDialog from "../../Pages/FullScreenDialog";
+import { OpenInBrowser } from "@material-ui/icons";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -96,6 +99,7 @@ const Navbar = React.forwardRef((props, ref) => {
   const [navColor, setnav] = useState(" ");
   const [openBar, setopenBar] = useState(false);
   const [open, setOpen] = React.useState(false);
+  
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -258,7 +262,7 @@ const Navbar = React.forwardRef((props, ref) => {
         </Fab>
       </ScrollTop>
 
-      <Dialog  onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+      {/* <Dialog  onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
       <h3 className="contacUsCardsHeading"> Faculty Head </h3>
 
       <div className="contactUsCardDialog">
@@ -281,7 +285,12 @@ const Navbar = React.forwardRef((props, ref) => {
       />
       </div>
  
-      </Dialog>
+      </Dialog> */}
+
+      <FullScreenDialog 
+        open={open}
+        handleClose={handleClose}
+      />
     </div>
   );
 });

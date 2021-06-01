@@ -13,11 +13,10 @@
 }
 
 .contactUsCard {
-  height: 100px;
-  width: 200px;
-  margin: 20px;
   padding: 20px;
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactUsInfo {
