@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
 
 .recruitUs {
   position: relative;
@@ -29,17 +29,17 @@
   border-radius: 20px;
 }
 
-.head{
+.head {
   display: flex;
   flex-direction: column;
 }
 
-.rightHead{
+.rightHead {
   align-items: flex-end;
 }
 
 .reusableHeading {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 30px;
   color: #35166b;
   font-weight: 900;
@@ -52,17 +52,15 @@
   text-align: start;
 }
 
-
-.lineBreak{
+.lineBreak {
   margin: 0;
-  height: .40rem;
+  height: 0.4rem;
   width: 10%;
   margin-bottom: 10vh;
   background: tomato;
   border: none;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
 
 .reusableHeadingBlock {
   display: flex;
@@ -79,7 +77,7 @@
   border-radius: 20px;
 }
 
-.leftBlock{
+.leftBlock {
   border-left: none;
   border-right: 5px solid #eee;
 }
@@ -119,10 +117,8 @@ footer {
   margin: 0;
   text-align: right;
   font-size: 1.5em;
-  font-style: italic;
 }
 
-
-p{
-  font-family: 'Montserrat', sans-serif;
+p {
+  font-family: "Montserrat", sans-serif;
 }
