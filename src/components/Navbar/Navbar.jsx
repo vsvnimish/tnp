@@ -10,7 +10,7 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import FullScreenDialog from "../../Pages/FullScreenDialog";
-
+import Brochure from "../../Brochure.pdf";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -65,16 +65,6 @@ const Navbar = React.forwardRef((props, ref) => {
     setOpen(false);
   };
 
-//   function isInViewport(element) {
-//     const rect = element.getBoundingClientRect();
-//     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }
-
   const changeNavBack = () => {
     if (window.scrollY > 20) {
       setnavState("activeA");
@@ -83,7 +73,6 @@ const Navbar = React.forwardRef((props, ref) => {
     }
 
     if(window.location.pathname === '/')
-    //if( isInViewport(document.getElementById('recruit')) || isInViewport(document.getElementById('recruit2'))  || isInViewport(document.getElementById('recruit3')) ){
     if(window.scrollY >= 2100){  
       addActiveClass("2");
     }else{
@@ -106,10 +95,8 @@ const Navbar = React.forwardRef((props, ref) => {
     }
     else if(item.id === 2){
       document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });
-    }
-    else {
+    }else if(item.id === 4) {
       handleClickOpen();
-      //window.open(item.route);
     }
 
     if (openBar) {
@@ -185,7 +172,7 @@ const Navbar = React.forwardRef((props, ref) => {
                 }}
               >
                 <div id={item.id} className="naviTab">
-                  <div className="tabTitle">{item.heading}</div>
+                  {item.id===3 ? <a href={Brochure} download="IIITR Internship Brochure" className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
                   {item.drop ? <ArrowDropDownIcon /> : null}
                 </div>
                 <ul className="dropdownMenu">
@@ -218,31 +205,6 @@ const Navbar = React.forwardRef((props, ref) => {
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>
-
-      {/* <Dialog  onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-      <h3 className="contacUsCardsHeading"> Faculty Head </h3>
-
-      <div className="contactUsCardDialog">
-      <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-      />
-
-      <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-      />
-
-      <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-      />
-      </div>
- 
-      </Dialog> */}
 
       <FullScreenDialog 
         open={open}

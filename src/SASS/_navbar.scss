@@ -192,6 +192,7 @@ $hamburger-padding-y: 0px;
   position: relative;
   display: flex;
   font-weight: 600;
+  color: #DEE3F699 !important;
 }
 
 .tabTitle::after {
@@ -203,10 +204,12 @@ $hamburger-padding-y: 0px;
   left: 50%;
   bottom: -10px;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .tabTitle:hover{
-  color: white;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .naviTab:hover .tabTitle::after {
@@ -216,7 +219,7 @@ $hamburger-padding-y: 0px;
 
 .activeTab{
   .tabTitle{
-    color: white;
+    color: white !important;
   }
   
   .tabTitle::after {
