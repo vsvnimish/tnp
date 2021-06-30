@@ -49,7 +49,7 @@ function Footer() {
                 <a href="https://iiitr.ac.in/reach_us.html">
                   Reach Us
                 </a>
-              </li>>
+              </li>
               <li className="list">
                 <li class="fas fa-chevron-right rightIcon"></li>
                 <a href="https://iiitr.ac.in/news.html">
