@@ -38,6 +38,24 @@ function Footer() {
                   Faculty Profiles
                 </a>
               </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://iiitr.ac.in/curriculum.html">
+                  Curriculum
+                </a>
+              </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://iiitr.ac.in/reach_us.html">
+                  Reach Us
+                </a>
+              </li>>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://iiitr.ac.in/news.html">
+                  Institute News
+                </a>
+              </li>
             </ul>
           </div>
 
