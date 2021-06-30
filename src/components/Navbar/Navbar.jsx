@@ -172,7 +172,7 @@ const Navbar = React.forwardRef((props, ref) => {
                 }}
               >
                 <div id={item.id} className="naviTab">
-                  {item.id===3 ? <a href={Brochure} download="IIITR Internship Brochure" className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
+                  {item.id===3 ? <a href={Brochure} className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
                   {item.drop ? <ArrowDropDownIcon /> : null}
                 </div>
                 <ul className="dropdownMenu">
