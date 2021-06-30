@@ -128,7 +128,6 @@ $hamburger-padding-y: 0px;
         }
       }
     }
-
   }
 
   @include mobile {
@@ -157,7 +156,7 @@ $hamburger-padding-y: 0px;
 }
 
 .activeA {
-  background-color: rgba(15,0,41,0.9);
+  background-color: rgba(15, 0, 41, 0.9);
   box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.4)";
 }
 
@@ -192,7 +191,7 @@ $hamburger-padding-y: 0px;
   position: relative;
   display: flex;
   font-weight: 600;
-  color: #DEE3F699 !important;
+  color: #dee3f699 !important;
 }
 
 .tabTitle::after {
@@ -204,10 +203,9 @@ $hamburger-padding-y: 0px;
   left: 50%;
   bottom: -10px;
   transition: all 0.3s ease-in-out;
-  
 }
 
-.tabTitle:hover{
+.tabTitle:hover {
   color: white !important;
   text-decoration: none !important;
 }
@@ -217,39 +215,39 @@ $hamburger-padding-y: 0px;
   left: 0;
 }
 
-.activeTab{
-  .tabTitle{
+.activeTab {
+  .tabTitle {
     color: white !important;
   }
-  
+
   .tabTitle::after {
     width: 100%;
     left: 0;
   }
 }
 
-.navColor{
-  background-color: rgba(15,0,41,0.9) !important;
+.navColor {
+  background-color: rgba(15, 0, 41, 0.9) !important;
 }
 
-.MuiFab-secondary{
+.MuiFab-secondary {
   background-color: tomato !important;
 }
 
-.contacUsCardsHeading{
-
-  font-family: 'Mulish', sans-serif;
-    font-size: 20px;
-    color: #35166b;
-    font-weight: 900;
-    margin: 20px auto;
-    text-align: start;
+.contactUsCardsHeading {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  color: #35166b;
+  font-weight: 900;
+  margin: 20px auto;
+  text-align: start;
 }
 
-.contactUsCardDialog{
-
+.contactUsCardDialog {
+  max-width: 90vw;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 20px;
+  margin: 20px auto;
 }

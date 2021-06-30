@@ -1,4 +1,5 @@
 import directordeskImage from "../images/directorsdesk.jpg";
+import tpoImage from "../images/tpoImage.webp";
 
 const AboutIIITR = `The Indian Institute of Information Technology, Raichur(IIITR) was established in 2019, as a centre of academic excellence in the field of Computer Science and Information Technology. Currently being mentored by the Indian Institute of Technology, Hyderabad(IITH), IIITR is an institute of national importance, formed under the Public Private Partnership model, with contributions from MHRD, Government of India and the Government of Karnataka.
 With its highly esteemed & able faculty, modern curriculum and a pioneering batch of bright minded individuals, IIITR is an abode of creativity and innovation, ready to show the world what it is capable of.`;
@@ -12,15 +13,7 @@ const Thoughts = [
     haveLogo: true,
     writer: "BS Murty",
     heading: "From Director's Desk",
-    content: `Being mentored by IITH, IIITR has adopted the innovative
-    fractal academics system, which warrants continuous
-    evaluation. This ensures the students have a deeper
-    understanding of the core subjects. Moreover, the highly
-    flexible curriculum forged by the esteemed faculty of IITH and
-    IIITR exuberates innovation and inventiveness. With core
-    subjects being incorporated from the first semester itself, the
-    students are able to finish their courses quite early and focus
-    on developing projects & industry relevant skills.`,
+    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgSrc: directordeskImage,
     altText: "Director",
   },
@@ -39,9 +32,8 @@ const Thoughts = [
     subjects being incorporated from the first semester itself, the
     students are able to finish their courses quite early and focus
     on developing projects & industry relevant skills.`,
-    imgSrc:
-      "https://images-ext-1.discordapp.net/external/Eld7F0Wj94n5lzFm6tRzx6gd96ikkZX1a75dfitylIU/https/iiitr.ac.in/assets/images/faculty/cse/sadhana.webp",
-    altText: "tpo",
+    imgSrc: tpoImage,
+    altText: "TPO",
   },
 ];
 

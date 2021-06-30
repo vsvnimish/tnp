@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-// .contactUsCard {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-.contactUsImage {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
-
 .contactUsCard {
   padding: 20px;
   display: flex;
@@ -19,16 +8,32 @@
   align-items: center;
 }
 
-.contactUsInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: justify;
-  margin-bottom: 2vh;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-}
-
 .phoneNum {
   display: inline !important;
+}
+
+.contactUsCardsHeading {
+  font-size: 30px;
+}
+
+.contactUsCardDialog {
+  .contactUsImage {
+    margin: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgba(139, 139, 139, 0.288);
+  }
+
+  .contactUsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 2vh;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    margin: 20px;
+    font-size: 18px;
+  }
 }

@@ -1,16 +1,21 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Dialog from '@material-ui/core/Dialog';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
-import Slide from '@material-ui/core/Slide';
-import ContactUsCard from '../components/ContactUsCard';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Dialog from "@material-ui/core/Dialog";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
+import Slide from "@material-ui/core/Slide";
+import ContactUsCard from "../components/ContactUsCard";
+import {
+  WebTeam,
+  PlacementCoordinators,
+  PlacementHead,
+} from "../Content/Contact.js";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    position: 'relative',
+    position: "relative",
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -24,68 +29,70 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function FullScreenDialog(props) {
   const classes = useStyles();
- 
-var {open,handleClose} = props;
+
+  var { open, handleClose } = props;
   return (
     <div>
-      <Dialog fullScreen open={open} TransitionComponent={Transition}>
-        <AppBar className={classes.appBar}>
+      <Dialog
+        onClose={handleClose}
+        fullScreen
+        open={open}
+        TransitionComponent={Transition}
+      >
+        <AppBar style={{ background: "#27193E" }} className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
+            <IconButton
+              edge="start"
+              color="inherit"
+              onClick={handleClose}
+              aria-label="close"
+            >
               <CloseIcon />
             </IconButton>
-
-
           </Toolbar>
         </AppBar>
-        <h3 className="contacUsCardsHeading"> Faculty Head </h3>
+        <h3 className="contactUsCardsHeading"> Faculty Head </h3>
 
         <div className="contactUsCardDialog">
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
-
+          {PlacementHead.map((item) => {
+            return (
+              <ContactUsCard
+                name={item.name}
+                email={item.email}
+                phone={item.phone}
+                image={item.image}
+              />
+            );
+          })}
         </div>
 
-        <h3 className="contacUsCardsHeading"> Web Team </h3>
+        <h3 className="contactUsCardsHeading"> Placement Team Coordinators </h3>
         <div className="contactUsCardDialog">
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
+          {PlacementCoordinators.map((item) => {
+            return (
+              <ContactUsCard
+                name={item.name}
+                email={item.email}
+                phone={item.phone}
+                image={item.image}
+              />
+            );
+          })}
+        </div>
 
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
-
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
-       </div>
-
-
-       <h3 className="contacUsCardsHeading"> Placement Team Coordinators </h3>
+        <h3 className="contactUsCardsHeading"> Web Team </h3>
         <div className="contactUsCardDialog">
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
-
-        <ContactUsCard 
-        name="Jatin"
-        email="cs19b1013@iiitr.ac.in"
-        phoneNum="9068334677"
-        />
-
-       </div>
+          {WebTeam.map((item) => {
+            return (
+              <ContactUsCard
+                name={item.name}
+                email={item.email}
+                phone={item.phone}
+                image={item.image}
+              />
+            );
+          })}
+        </div>
       </Dialog>
     </div>
   );
