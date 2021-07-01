@@ -108,6 +108,9 @@ const Navbar = React.forwardRef((props, ref) => {
     return (
       <button
         className={`hamburger hamburger--collapse ${state} ham`}
+        onClick={() => {
+            setopenBar(!openBar);
+          }}
         type="button"
       >
         <span className="hamburger-box">
@@ -132,6 +135,10 @@ const Navbar = React.forwardRef((props, ref) => {
       setNavState: (state, tab)=>{
         setnav(state);
         addActiveClass(tab);
+      },
+
+      setMenu: (menuState) => {
+        setopenBar(menuState);
       }
     };
   });
@@ -154,14 +161,11 @@ const Navbar = React.forwardRef((props, ref) => {
 
         <div
           className="menu"
-          onClick={() => {
-            setopenBar(!openBar);
-          }}
         >
           {openBar ? getHam("is-active") : getHam(" ")}
         </div>
 
-        <ul className={openBar ? "list active " : "list "}>
+        <ul className={openBar ? "list active " : "list nonActive"}>
           {BarItems.map((item) => {
             return (
               <li

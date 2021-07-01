@@ -23,7 +23,7 @@ const HomePage = React.forwardRef((props, ref)=> {
     }, [ref])
 
   return (
-    <div className="homepage" id="home">
+    <div className="homepage" id="home" onClick={() => { ref.current.setMenu(false); }}>
       <div className="top">
 
             <img src={BackImg} alt="website logo" className="backImage" />

@@ -1,9 +1,11 @@
 @import "./media";
-$hamburger-layer-width: 10px;
-$hamburger-layer-height: 1.5px;
-$hamburger-layer-spacing: 1px;
-$hamburger-padding-x: 0px;
-$hamburger-padding-y: 0px;
+$hamburger-layer-width: 9vw;
+$hamburger-layer-height: 0.4vh;
+$hamburger-layer-spacing: 0.8vh;
+$hamburger-padding-x: 3vw;
+$hamburger-padding-y: 1vh;
+$hamburger-layer-color: rgb(194, 194, 194);
+
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @mixin barTabs {
@@ -24,6 +26,10 @@ $hamburger-padding-y: 0px;
 .navBar {
   @include barTabs;
   height: 8vh;
+
+  @include mobile{
+    height: 9vh;
+  }
   background-color: transparent;
   transition: all 0.8s ease;
 
@@ -44,8 +50,11 @@ $hamburger-padding-y: 0px;
     opacity: 0;
 
     @include mobile {
-      max-width: 1px;
-      display: contents;
+      display: flex;
+      width: 100vw;
+      flex-direction: row;
+      justify-content: flex-end;
+      opacity: 1;
 
       .ham {
         outline: 0;
@@ -147,10 +156,15 @@ $hamburger-padding-y: 0px;
     }
 
     .list.active {
-      background: #d3d3d3;
-      top: 80px;
+      background: #27193e;
+      top: 9vh;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 0.8s ease;
+      right: 0%;
+    }
+
+    .list.nonActive{
+      transition: all 0.8s ease;
     }
   }
 }
