@@ -74,8 +74,10 @@ const Navbar = React.forwardRef((props, ref) => {
 
     if(window.location.pathname === '/')
     if(window.scrollY >= 2100){  
+      addActiveClass("3");
+    }else if(window.scrollY >= 600){  
       addActiveClass("2");
-    }else{
+    }else {
       addActiveClass("1");
     }
   
@@ -94,8 +96,10 @@ const Navbar = React.forwardRef((props, ref) => {
       document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
     }
     else if(item.id === 2){
+      document.getElementById('aboutUs').scrollIntoView({ behavior: 'smooth' });
+    }else if(item.id === 3){
       document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });
-    }else if(item.id === 4) {
+    }else if(item.id === 5) {
       handleClickOpen();
     }
 
@@ -176,7 +180,7 @@ const Navbar = React.forwardRef((props, ref) => {
                 }}
               >
                 <div id={item.id} className="naviTab">
-                  {item.id===3 ? <a href={Brochure} className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
+                  {item.id===4 ? <a href={Brochure} className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
                   {item.drop ? <ArrowDropDownIcon /> : null}
                 </div>
                 <ul className="dropdownMenu">

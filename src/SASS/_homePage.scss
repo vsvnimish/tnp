@@ -12,6 +12,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  @include mobile{
+    flex-direction: column;
+
+  }
 
   .logo{
     height: 18vh;
@@ -23,15 +27,24 @@
     transition-timing-function: ease-out;
     margin-top: 1vh;
     margin-left: 2vw;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     h1{
       font-size: 2.5vw;
       user-select: none;
       font-family: 'Mulish', sans-serif;
+      @include mobile{font-size: 7vw;}
     }
     h6{
       color: rgb(192, 187, 187);
       font-weight: lighter;
       font-family: 'Montserrat', sans-serif;
+      @include mobile{font-size: 3vw;}
     }
   }
 

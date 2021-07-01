@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {AboutIIITR, Thoughts} from '../Content/Home.js'
 import {ReactComponent as Logo} from "../images/logo.svg"
 import ReusableCard from '../components/ReusableBlock';
@@ -18,6 +18,12 @@ AOS.init({
 
 const HomePage = React.forwardRef((props, ref)=> {
 
+    const [screenSize, setScreenSize] = useState(window.screen.width);
+
+    window.addEventListener("resize", () => {
+    setScreenSize(window.screen.width);
+    });
+
     useEffect(() => {
         ref.current.setNavState(" ", "1");
     }, [ref])
@@ -33,8 +39,8 @@ const HomePage = React.forwardRef((props, ref)=> {
                 <div className="HomepageCenter" data-aos="zoom-in" >
                     <Logo className="logo" />
 
-                    <div className="HomepageLogoText" data-aos="fade-right"  >
-                        <h1>Training and <br/>Placement Cell</h1>
+                    <div className="HomepageLogoText" data-aos={screenSize>960 ? "fade-right" : "fade-down"}  >
+                        {screenSize>960 ? <h1>Training and <br/>Placement Cell</h1> : <h1>Training and Placement Cell</h1>}
                         <h6>Indian Institute Of Information Technology, Raichur</h6>
                     </div>
 
@@ -42,9 +48,11 @@ const HomePage = React.forwardRef((props, ref)=> {
 
                 </div>
 
-                <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollTO').scrollIntoView({ behavior: 'smooth' })}} >
-                    <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
-                </div>
+                {screenSize > 960 ? 
+                    <div className = "scrollNoti" onClick={()=>{document.getElementById('scrollTO').scrollIntoView({ behavior: 'smooth' })}} >
+                        <i className="fas fa-2x fa-angle-double-down" style={{cursor:"pointer"}} ></i> 
+                    </div>
+                    : null}
 
                 </div>
             
@@ -62,7 +70,7 @@ const HomePage = React.forwardRef((props, ref)=> {
         </div>
         <div className="recruitUs" id="scrollTO" >
             
-            <div className="aboutUs" data-aos="fade-up" >
+            <div id="aboutUs" className="aboutUs" data-aos="fade-up" >
                 <h1>About Us</h1>
                 <p>{AboutIIITR}</p>
             </div>
