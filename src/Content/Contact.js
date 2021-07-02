@@ -1,5 +1,6 @@
 import tpoImage from "../images/tpoImage.webp";
 import webCord2 from "../images/webCord2.jpeg";
+import Ananya from "../images/Ananya.png"
 
 const WebTeam = [
   {
@@ -103,9 +104,10 @@ const PlacementCoordinators = [
     phone: "+91 8106092571",
   },
   {
-    name: "Ananaya Mantravadi",
+    name: "Ananya Mantravadi",
     email: "cs19b1004@iiitr.ac.in",
     phone: "+91 9391307112",
+    image: Ananya,
   },
 ];
 
