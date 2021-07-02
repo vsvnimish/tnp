@@ -1,7 +1,6 @@
 import tpoImage from "../images/tpoImage.webp";
 import webCord2 from "../images/webCord2.jpeg";
 import Ananya from "../images/Ananya.png";
-// import Abhijeet from "../images/Abhijeet.jpg"
 
 const WebTeam = [
   {
@@ -17,7 +16,7 @@ const WebTeam = [
     image: webCord2,
   },
   {
-    name: "Aditya Agarwal",
+    name: "Aditya Agrawal",
     email: "cs19b1003+tnp@iiitr.ac.in",
     phone: "+91 9785559273",
     image: "https://crossphoton.tech/img/pic.webp",
@@ -40,7 +39,7 @@ const PlacementHead = [
 
 const PlacementCoordinators = [
   {
-    name: "Aditya Agarwal",
+    name: "Aditya Agrawal",
     email: "cs19b1003+tnp@iiitr.ac.in",
     phone: "+91 9785559273",
     image: "https://crossphoton.tech/img/pic.webp",
@@ -74,7 +73,7 @@ const PlacementTeam = [
     phone: "+91 9390075787",
   },
   {
-    name: "Kaustubh Kesarvani",
+    name: "Kaustubh Kesharwani",
     email: "cs19b1015@iiitr.ac.in",
     phone: "+91 9121066021",
   },
