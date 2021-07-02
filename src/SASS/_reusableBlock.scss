@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+@import "./media";
+
 
 .recruitUs {
   position: relative;
@@ -21,6 +23,10 @@
   border-radius: 20px;
   // margin-left: 7vw;
   // margin-right: 7vw;
+
+  @include mobile{
+    flex-direction: column;
+  }
 }
 
 .reusableCard {
@@ -60,6 +66,20 @@
   background: tomato;
   border: none;
   transition: 0.3s ease-in-out;
+
+  @include mobile{
+    width: 60%;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.blockquote{
+  @include mobile{
+    padding: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 .reusableHeadingBlock {
@@ -69,12 +89,29 @@
   align-items: center;
 }
 
+.R1{
+  @include mobile{
+    padding-bottom: 5vh;
+  }
+}
+
+.R2{
+  @include mobile{
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+}
+
 .reusableHeadingImage {
   height: 40vh;
   width: 20vw;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
+
+  @include mobile{
+    width: 70vw;
+  }
 }
 
 .leftBlock {
@@ -88,6 +125,10 @@
   quotes: "\201C""\201D""\2018""\2019";
   padding: 10px 20px;
   line-height: 1.4;
+
+  @include mobile{
+    padding: 10px 10px;
+  }
 }
 
 .quotation:before {

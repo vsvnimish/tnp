@@ -12,4 +12,9 @@
     flex-direction: column;
 }
 
+.mainBody{
+    @include mobile{
+        margin-bottom: -25vh;
+    }
+}
 

@@ -11,11 +11,14 @@ function ReusableCard(props){
       </div>
       <div className="reusableBlock" >
 
-      <div className="reusableHeadingBlock">
-        {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
-      </div>
+      {
+        props.haveLogo ? <div className="reusableHeadingBlock R1">
+          <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} />
+        </div>
+        : null
+      }
       <div className="reusableCard"> 
-        <blockquote><p className="quotation" > {props.content}</p>
+        <blockquote className="blockquote" ><p className="quotation" > {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>
@@ -33,16 +36,20 @@ function ReusableCard(props){
 
         <div className="reusableBlock" >
       <div className="reusableCard"> 
-        <blockquote className="leftBlock" ><p className="quotation"> {props.content}</p>
+        <blockquote className="blockquote leftBlock" ><p className="quotation"> {props.content}</p>
           <footer> {props.writer}</footer>
         </blockquote>
       </div>
-      <div className="reusableHeadingBlock">
-        {props.haveLogo ? <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} /> : null } 
-      </div>
 
+      {
+        props.haveLogo ? 
+        <div className="reusableHeadingBlock R2">
+          <img className="reusableHeadingImage" src={props.imgSrc} alt={props.altText} />
+        </div>
+        : null
+      }
       </div>
-  </div>
+      </div>
     );
 }
 
