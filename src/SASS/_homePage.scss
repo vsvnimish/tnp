@@ -305,10 +305,18 @@
 
     h1{
       font-size: 20px;
+
+      @include mobile{
+        font-size: 30px;
+      }
     }
 
     p{
       font-size: 15px;
+
+      @include mobile{
+        font-size: 17px;
+      }
     }
   }
 }
