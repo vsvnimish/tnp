@@ -2,7 +2,6 @@ import React from "react";
 import "../SASS/_social.scss";
 import "./_footer.scss";
 import Logo from "../images/logo/logo.png";
-import Map from "../components/Map";
 import { address, Contacts } from "../Content/footerInfo";
 
 function Footer() {
@@ -20,7 +19,7 @@ function Footer() {
               <div>Temporary Campus:</div>
               <div>{address}</div>
               <div className="map">
-                <Map />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4220190966116!2d77.36481471332213!3d16.25012718683498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d0b2f016db69%3A0xc0bdd1de3bb5246!2sGovt.%20Engg.%20College%20Admin%20Block!5e0!3m2!1sen!2sin!4v1604916729627!5m2!1sen!2sin" title="map" className="mapI" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
             </div>
           </div>
@@ -59,8 +58,8 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="contact footerItems">
-            <h3 className="footer-title">Conatct Us</h3>
+          <div className=" footerItems">
+            <h3 className="footer-title contactUs">Conatct Us</h3>
 
             {Contacts.map((item) => {
               return (

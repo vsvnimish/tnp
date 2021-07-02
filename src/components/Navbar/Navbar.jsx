@@ -94,9 +94,8 @@ const Navbar = React.forwardRef((props, ref) => {
 
     if(item.id === 1){
       document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-    }
-    else if(item.id === 2){
-      document.getElementById('aboutUs').scrollIntoView({ behavior: 'smooth' });
+    }else if(item.id === 2){
+      document.getElementById('aboutUs').scrollIntoView({ behavior: 'smooth' , block: "center"});
     }else if(item.id === 3){
       document.getElementById('recruit').scrollIntoView({ behavior: 'smooth' });
     }else if(item.id === 5) {

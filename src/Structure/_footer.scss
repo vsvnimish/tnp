@@ -1,3 +1,4 @@
+@import '../SASS/media';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
@@ -13,6 +14,11 @@
     height: fit-content;
     background-color: #081e3f;
 
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+    }
+
     h1 {
       font-size: 2rem;
       text-align: center;
@@ -24,6 +30,12 @@
       flex-direction: column;
       align-items: flex-start;
       padding-right: 4vw;
+
+      @include mobile{
+        width: 100%;
+        padding: 4vw;
+        padding-bottom: 0;
+      }
     }
 
     .logoSpace {
@@ -38,6 +50,11 @@
       padding: 0%;
       width: 90%;
 
+      @include mobile{
+        column-count: 2;
+        width: 100%;
+      }
+
       .list {
         display: flex;
         padding: 10px;
@@ -45,6 +62,12 @@
         padding-bottom: 5px;
         align-items: center;
         border-bottom: 1px solid #bcc3df;
+
+        @include mobile{
+          padding: 0;
+          padding-bottom: 4vh;
+          border-bottom: none;
+        }
 
         .rightIcon {
           padding: 7px;
@@ -67,13 +90,24 @@
   }
 }
 
+.mapI{
+  height: 30vh;
+  width: 25vw;
+
+  @include mobile{
+    width: 92vw;
+  }
+}
+
 .logoF {
   filter: invert(95%) sepia(90%) saturate(10%) hue-rotate(220deg)
     brightness(102%) contrast(99%);
   margin-top: 5%;
   margin-left: 5%;
   width: 9vw;
-  //height: 16vh;
+  @include mobile{
+    width: 30vw;
+  }
 }
 
 .footer-title {
@@ -84,6 +118,10 @@
   padding-bottom: 15px;
   font-size: 16px;
   position: relative;
+
+  @include mobile{
+    margin-bottom: 4vh;
+  }
 }
 
 .footer-title:after {
@@ -136,6 +174,14 @@
   .copyright {
     padding: 1.5vh;
     font-size: 1vw;
+
+    @include mobile{
+      font-size: 3vw;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+    }
   }
 }
 
