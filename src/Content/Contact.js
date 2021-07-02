@@ -11,7 +11,7 @@ const WebTeam = [
     name: "Jatin Sachdeva",
     email: "cs19b1013@iiitr.ac.in",
     phone: "+91 9068334677",
-    image: "https://bit.ly/2UgljTO",
+    image: "https://drive.google.com/file/d/15Hhc1eJJ4PlSjof8PqJD7yq4MAc0wguK/view",
   },
   {
     name: "Aditya Agrawal",
