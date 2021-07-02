@@ -1,12 +1,14 @@
 import tpoImage from "../images/tpoImage.webp";
 import webCord2 from "../images/webCord2.jpeg";
 import Ananya from "../images/Ananya.png"
+// import Abhijeet from "../images/Abhijeet.jpg"
 
 const WebTeam = [
   {
     name: "Abhijeet Wankhade",
     email: "cs19b1028@iiitr.ac.in",
     phone: "+91 7720998898",
+    //image: Abhijeet,
   },
   {
     name: "Jatin Sachdeva",

@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import './media';
 
 .contactUsCard {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .phoneNum {
@@ -14,6 +16,7 @@
 
 .contactUsCardsHeading {
   font-size: 30px;
+  text-align: center;
 }
 
 .contactUsCardDialog {
@@ -23,6 +26,13 @@
     width: 200px;
     height: 200px;
     border: 5px solid rgba(139, 139, 139, 0.288);
+
+    @include mobile{
+      margin: 0;
+
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .contactUsInfo {
@@ -35,5 +45,11 @@
     font-style: normal;
     margin: 20px;
     font-size: 18px;
+
+    @include mobile{
+      margin: 0;
+      font-size: 10px;
+      padding-top: 1vh;
+    }
   }
 }
