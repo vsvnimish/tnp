@@ -19,7 +19,7 @@ const WebTeam = [
     name: "Aditya Agrawal",
     email: "cs19b1003+tnp@iiitr.ac.in",
     phone: "+91 9785559273",
-    image: "https://crossphoton.tech/img/pic.webp",
+    image: "https://bit.ly/crossphoton-img",
   },
   {
     name: "Kushagra Indurakhya",
@@ -42,7 +42,7 @@ const PlacementCoordinators = [
     name: "Aditya Agrawal",
     email: "cs19b1003+tnp@iiitr.ac.in",
     phone: "+91 9785559273",
-    image: "https://crossphoton.tech/img/pic.webp",
+    image: "https://bit.ly/crossphoton-img",
   },
   {
     name: "Reethu",
