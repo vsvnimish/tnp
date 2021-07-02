@@ -1,6 +1,6 @@
 import tpoImage from "../images/tpoImage.webp";
 import webCord2 from "../images/webCord2.jpeg";
-import Ananya from "../images/Ananya.png"
+import Ananya from "../images/Ananya.png";
 // import Abhijeet from "../images/Abhijeet.jpg"
 
 const WebTeam = [
@@ -21,6 +21,11 @@ const WebTeam = [
     email: "cs19b1003+tnp@iiitr.ac.in",
     phone: "+91 9785559273",
     image: "https://crossphoton.tech/img/pic.webp",
+  },
+  {
+    name: "Kushagra Indurakhya",
+    email: "cs19b1017@iiitr.ac.in",
+    phone: "+91 9026409246",
   },
 ];
 
@@ -45,6 +50,9 @@ const PlacementCoordinators = [
     email: "cs19b1024@iiitr.ac.in",
     phone: "+91 8919239558",
   },
+];
+
+const PlacementTeam = [
   {
     name: "Kushagra Indurakhya",
     email: "cs19b1017@iiitr.ac.in",
@@ -113,4 +121,4 @@ const PlacementCoordinators = [
   },
 ];
 
-export { WebTeam, PlacementCoordinators, PlacementHead };
+export { WebTeam, PlacementCoordinators, PlacementHead, PlacementTeam };

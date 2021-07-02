@@ -11,6 +11,7 @@ import {
   WebTeam,
   PlacementCoordinators,
   PlacementHead,
+  PlacementTeam,
 } from "../Content/Contact.js";
 
 const useStyles = makeStyles((theme) => ({
@@ -69,6 +70,20 @@ export default function FullScreenDialog(props) {
         <h3 className="contactUsCardsHeading"> Placement Team Coordinators </h3>
         <div className="contactUsCardDialog">
           {PlacementCoordinators.map((item) => {
+            return (
+              <ContactUsCard
+                name={item.name}
+                email={item.email}
+                phone={item.phone}
+                image={item.image}
+              />
+            );
+          })}
+        </div>
+
+        <h3 className="contactUsCardsHeading"> Placement Team </h3>
+        <div className="contactUsCardDialog">
+          {PlacementTeam.map((item) => {
             return (
               <ContactUsCard
                 name={item.name}
