@@ -107,7 +107,7 @@ $hamburger-layer-color: rgb(194, 194, 194);
         position: absolute;
         top: 100%;
         perspective: 1000px;
-        width: 90%;
+        width: fit-content;
         z-index: -1;
         padding: 0%;
 
@@ -115,14 +115,14 @@ $hamburger-layer-color: rgb(194, 194, 194);
           display: none;
           list-style: none;
           color: white;
-          background-color: #b3b3b3;
+          background-color: #27193E;
           padding: 10px 20px;
           font-size: 1.2vw;
           opacity: 0;
-          box-shadow: 0 0 4px 0 #666666;
+          // box-shadow: 0 0 4px 0 #666666;
 
           &:hover {
-            background-color: #c1c1c5;
+            background-color: #27193ec4;
           }
         }
 

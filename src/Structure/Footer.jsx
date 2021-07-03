@@ -3,6 +3,7 @@ import "../SASS/_social.scss";
 import "./_footer.scss";
 import Logo from "../images/logo/logo.png";
 import { address, Contacts } from "../Content/footerInfo";
+import Brochure from "../Brochure.pdf";
 
 function Footer() {
   return (
@@ -19,7 +20,16 @@ function Footer() {
               <div>Temporary Campus:</div>
               <div>{address}</div>
               <div className="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4220190966116!2d77.36481471332213!3d16.25012718683498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d0b2f016db69%3A0xc0bdd1de3bb5246!2sGovt.%20Engg.%20College%20Admin%20Block!5e0!3m2!1sen!2sin!4v1604916729627!5m2!1sen!2sin" title="map" className="mapI" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4220190966116!2d77.36481471332213!3d16.25012718683498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d0b2f016db69%3A0xc0bdd1de3bb5246!2sGovt.%20Engg.%20College%20Admin%20Block!5e0!3m2!1sen!2sin!4v1604916729627!5m2!1sen!2sin"
+                  title="map"
+                  className="mapI"
+                  frameborder="0"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -29,7 +39,21 @@ function Footer() {
             <ul className="quickLinks">
               <li className="list">
                 <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://forms.gle/c8aXW35ay6L34Dro9/">
+                  Internship Announcement
+                </a>
+              </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
+                <a href={Brochure}>Brochure</a>
+              </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
                 <a href="https://www.iiitr.ac.in/">IIITR Website</a>
+              </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://iiitr.ac.in/curriculum.html">Curriculum</a>
               </li>
               <li className="list">
                 <li class="fas fa-chevron-right rightIcon"></li>
@@ -39,21 +63,7 @@ function Footer() {
               </li>
               <li className="list">
                 <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://iiitr.ac.in/curriculum.html">
-                  Curriculum
-                </a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://iiitr.ac.in/reach_us.html">
-                  Reach Us
-                </a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://iiitr.ac.in/news.html">
-                  Institute News
-                </a>
+                <a href="https://iiitr.ac.in/reach_us.html">Reach Us</a>
               </li>
             </ul>
           </div>

@@ -1,5 +1,6 @@
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
+import Brochure from "../Brochure.pdf";
 
 const BarItems = [
   {
@@ -25,10 +26,26 @@ const BarItems = [
   },
   {
     id: 4,
-    heading: "Brochure",
+    heading: "For Companies",
     description: "View Responses to the polls created by you.",
     icon: <SchoolIcon className="tabIcon" />,
     route: "/",
+    drop: [
+      {
+        id: 1,
+        heading: "Brochure",
+        onClick: () => {
+          window.location.href = Brochure;
+        },
+      },
+      {
+        id: 2,
+        heading: `Internship Announcement Form`,
+        onClick: function () {
+          window.location.href = "https://forms.gle/c8aXW35ay6L34Dro9";
+        },
+      },
+    ],
   },
   {
     id: 5,

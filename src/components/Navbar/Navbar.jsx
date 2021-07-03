@@ -8,9 +8,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import FullScreenDialog from "../../Pages/FullScreenDialog";
-import Brochure from "../../Brochure.pdf";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -179,8 +177,7 @@ const Navbar = React.forwardRef((props, ref) => {
                 }}
               >
                 <div id={item.id} className="naviTab">
-                  {item.id===4 ? <a href={Brochure} className="tabTitle">{item.heading}</a> : <div className="tabTitle">{item.heading}</div>}
-                  {item.drop ? <ArrowDropDownIcon /> : null}
+                  <div className="tabTitle">{item.heading}</div>
                 </div>
                 <ul className="dropdownMenu">
                   {item.drop
@@ -189,9 +186,7 @@ const Navbar = React.forwardRef((props, ref) => {
                           <li
                             key={id}
                             className={`dropdownItem-${id}`}
-                            onClick={() => {
-                              clickDropDown(droppedItem);
-                            }}
+                            onClick={droppedItem.onClick}
                           >
                             {droppedItem.heading}
                           </li>
