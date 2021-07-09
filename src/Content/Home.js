@@ -11,7 +11,7 @@ const Thoughts = [
     id: 1,
     isLeftAlign: true,
     haveLogo: true,
-    writer: "BS Murty",
+    writer: "Dr. BS Murty",
     heading: "From Director's Desk",
     content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgSrc: directordeskImage,
@@ -21,17 +21,9 @@ const Thoughts = [
     id: 2,
     isLeftAlign: false,
     haveLogo: true,
-    writer: "Sadhna Jha",
+    writer: "Dr. Sadhna Jha",
     heading: "Message From TPO",
-    content: `Being mentored by IITH, IIITR has adopted the innovative
-    fractal academics system, which warrants continuous
-    evaluation. This ensures the students have a deeper
-    understanding of the core subjects. Moreover, the highly
-    flexible curriculum forged by the esteemed faculty of IITH and
-    IIITR exuberates innovation and inventiveness. With core
-    subjects being incorporated from the first semester itself, the
-    students are able to finish their courses quite early and focus
-    on developing projects & industry relevant skills.`,
+    content: `With a vision to become a globally recognized institute for its academic excellence and groundbreaking research and innovation IIIT Raichur started its journey in 2019, under the mentorship of IIT Hyderabad. The curriculum of IIITR Raichur, not only focuses on teaching technical courses, but also on making the students industry ready. The rigour in teaching, endeavor to excel in all facets, learning from top notch researchers and academicians and participating in extra co-curricular activities inculcate definite excellence in the students of IIIT Raichur. It is my pleasure to invite all the prospective employers and trainers from India and abroad to visit the campus for the internship process. I am sure you will witness the outcome of excellence in the teaching and learning environment created at IIIT raichur. I look forward to your wholehearted support and engagement with us.`,
     imgSrc: tpoImage,
     altText: "TPO",
   },
