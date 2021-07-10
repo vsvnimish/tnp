@@ -100,14 +100,14 @@ const HomePage = React.forwardRef((props, ref)=> {
             </div>
  
         </div>
-        <div className="company">
+        {/* <div className="company">
             <marquee className="company-marqee">
                 <img height="80px" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img>
                 <img height="80px" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img>
                 <img height="80px" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
                 <img height="80px" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img>
             </marquee>
-        </div>
+        </div> */}
         {/* <div className="whyUsHeading">
             <h3 > Why us ??</h3>
         </div> */}
