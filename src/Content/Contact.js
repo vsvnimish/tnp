@@ -7,6 +7,7 @@ const WebTeam = [
     name: "Abhijeet Wankhade",
     email: "cs19b1028@iiitr.ac.in",
     phone: "+91 7720998898",
+    image: "https://cdn.discordapp.com/attachments/863338968048336896/863485872137830451/83881468_2606122862968346_7668919577576813518_n.png"
   },
   {
     name: "Jatin Sachdeva",
@@ -24,6 +25,7 @@ const WebTeam = [
     name: "Kushagra Indurakhya",
     email: "cs19b1017@iiitr.ac.in",
     phone: "+91 9026409246",
+    image: "https://cdn.kindurkhya.me/profile.jpg"
   },
 ];
 
@@ -55,6 +57,7 @@ const PlacementTeam = [
     name: "Kushagra Indurakhya",
     email: "cs19b1017@iiitr.ac.in",
     phone: "+91 9026409246",
+    image: "https://cdn.kindurkhya.me/profile.jpg",
   },
   {
     name: "Abhishek Sahoo",
@@ -103,7 +106,7 @@ const PlacementTeam = [
   },
   {
     name: "Yashwanth Vallabhu",
-    email: "cs19b1027@iiitr.ac.in",
+    email: "cs19b1030@iiitr.ac.in",
     phone: "+91 9390230911",
   },
   {
