@@ -71,7 +71,7 @@ const HomePage = React.forwardRef((props, ref)=> {
         <div className="recruitUs" id="scrollTO" >
             
             <div id="aboutUs" className="aboutUs" data-aos="fade-up" >
-                <h1>About IIIT Raichur</h1>
+                <h1>About Us</h1>
                 <p>{AboutIIITR}</p>
             </div>
 
@@ -100,42 +100,14 @@ const HomePage = React.forwardRef((props, ref)=> {
             </div>
  
         </div>
-        {/* <div className="company">
-            <marquee className="company-marqee">
-                <img height="80px" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img>
-                <img height="80px" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img>
-                <img height="80px" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
-                <img height="80px" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img>
-            </marquee>
-        </div> */}
-        {/* <div className="whyUsHeading">
-            <h3 > Why us ??</h3>
-        </div> */}
-
-        {/* <div className="whyUsContent">
-            {WhyUs.map((item)=>{
-                return(
-                    <ReusableBlock2
-                        heading={item.heading}
-                        content={item.content}
-                    />
-                )
-            })}
-        </div> */}
-            {/* <div className="content">
-	            <div>
-                    <div className="missionHead" id="mission" >
-                        <h1 className="heading">
-                            Mission and Philosophy
-                        </h1>
-                    </div>
-                    <hr className="line" />
-
-                    <p className="missionContent" >
-                        {Mission}
-                    </p>
-                </div>
-            </div> */}
+        <div className="company">
+            <div className="company-flexbox">
+                <img alt="CKM Vigil" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img>
+                <img alt="Capgemini" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img>
+                <img alt="Village Agro" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
+                <img alt="StoryXpress" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img>
+            </div>
+        </div>
     </div>
   );
 });
