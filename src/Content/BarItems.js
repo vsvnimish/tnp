@@ -32,14 +32,14 @@ const BarItems = [
     route: "/",
     drop: [
       {
-        id: 1,
+        id: 4.1,
         heading: "Brochure",
         onClick: () => {
           window.location.href = Brochure;
         },
       },
       {
-        id: 2,
+        id: 4.2,
         heading: `Internship Announcement Form`,
         onClick: function () {
           window.location.href = "https://forms.gle/c8aXW35ay6L34Dro9";

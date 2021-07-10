@@ -24,11 +24,11 @@ function Footer() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.4220190966116!2d77.36481471332213!3d16.25012718683498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9d0b2f016db69%3A0xc0bdd1de3bb5246!2sGovt.%20Engg.%20College%20Admin%20Block!5e0!3m2!1sen!2sin!4v1604916729627!5m2!1sen!2sin"
                   title="map"
                   className="mapI"
-                  frameborder="0"
+                  frameBorder="0"
                   style={{ border: 0 }}
-                  allowfullscreen=""
+                  allowFullScreen=""
                   aria-hidden="false"
-                  tabindex="0"
+                  tabIndex="0"
                 ></iframe>
               </div>
             </div>
@@ -37,50 +37,50 @@ function Footer() {
           <div className="footerItems">
             <h3 className="footer-title">Quick Links</h3>
             <ul className="quickLinks">
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              <ul key="1" className="list">
+                <li key="2" className="fas fa-chevron-right rightIcon"></li>
                 <a href="https://forms.gle/c8aXW35ay6L34Dro9/">
                   Internship Announcement
                 </a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              </ul>
+              <ul key="3" className="list">
+                <li key="4" className="fas fa-chevron-right rightIcon"></li>
                 <a href={Brochure}>Brochure</a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              </ul>
+              <ul key="5" className="list">
+                <li key="6" className="fas fa-chevron-right rightIcon"></li>
                 <a href="https://www.iiitr.ac.in/">IIITR Website</a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              </ul>
+              <ul key="7" className="list">
+                <li key="8" className="fas fa-chevron-right rightIcon"></li>
                 <a href="https://iiitr.ac.in/curriculum.html">Curriculum</a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              </ul>
+              <ul key="9" className="list">
+                <li key="10" className="fas fa-chevron-right rightIcon"></li>
                 <a href="https://www.iiitr.ac.in/faculty.html">
                   Faculty Profiles
                 </a>
-              </li>
-              <li className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
+              </ul>
+              <ul key="11" className="list">
+                <li key="12" className="fas fa-chevron-right rightIcon"></li>
                 <a href="https://iiitr.ac.in/reach_us.html">Reach Us</a>
-              </li>
+              </ul>
             </ul>
           </div>
 
           <div className=" footerItems">
             <h3 className="footer-title contactUs">Conatct Us</h3>
 
-            {Contacts.map((item) => {
+            {Contacts.map((item,id) => {
               return (
-                <div className="contentCards">
+                <div key={id} className="contentCards">
                   <div>{item.name}</div>
                   <a className="phoneNum" href={`mailto:${item.email}`}>
-                    <i class="fas fa-envelope" aria-hidden="true"></i> :{" "}
+                    <i className="fas fa-envelope" aria-hidden="true"></i> :{" "}
                     {item.email}
                   </a>
                   <a className="phoneNum" href={`tel: ${item.phoneNum}`}>
-                    <i class="fa fa-phone" aria-hidden="true"></i> :{" "}
+                    <i className="fa fa-phone" aria-hidden="true"></i> :{" "}
                     {item.phoneNum}
                   </a>
                 </div>
