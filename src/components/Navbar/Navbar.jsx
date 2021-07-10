@@ -102,9 +102,7 @@ const Navbar = React.forwardRef((props, ref) => {
         } else if (item.id === 4) {
             if (screenSize < 960) {
                 for (var i = 1; i <= item.drop.length; i++) {
-                    console.log(
-                        document.getElementById(`${item.id}.${i}`).classList
-                    );
+                    
                   document.getElementById(`${item.id}.${i}`).style.display ===
                   "block"
                       ? (document.getElementById(

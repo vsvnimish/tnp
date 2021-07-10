@@ -35,14 +35,14 @@ const BarItems = [
         id: 4.1,
         heading: "Brochure",
         onClick: () => {
-          window.location.href = Brochure;
+          window.open(Brochure);
         },
       },
       {
         id: 4.2,
         heading: `Internship Announcement Form`,
         onClick: function () {
-          window.location.href = "https://forms.gle/c8aXW35ay6L34Dro9";
+          window.open("https://forms.gle/c8aXW35ay6L34Dro9");
         },
       },
     ],

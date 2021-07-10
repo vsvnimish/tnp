@@ -2,8 +2,8 @@ import React from "react";
 import "../SASS/_social.scss";
 import "./_footer.scss";
 import Logo from "../images/logo/logo.png";
-import { address, Contacts } from "../Content/footerInfo";
-import Brochure from "../Brochure.pdf";
+import { address, Contacts, FooterLinks } from "../Content/footerInfo";
+// import Brochure from "../Brochure.pdf";
 
 function Footer() {
   return (
@@ -37,42 +37,17 @@ function Footer() {
           <div className="footerItems">
             <h3 className="footer-title">Quick Links</h3>
             <ul className="quickLinks">
-              <ul key="1" className="list">
-                <li key="2" className="fas fa-chevron-right rightIcon"></li>
-                <a href="https://forms.gle/c8aXW35ay6L34Dro9/">
-                  Internship Announcement
-                </a>
-              </ul>
-              <ul key="3" className="list">
-                <li key="4" className="fas fa-chevron-right rightIcon"></li>
-                <a href={Brochure}>Brochure</a>
-              </ul>
-              <ul key="5" className="list">
-                <li key="6" className="fas fa-chevron-right rightIcon"></li>
-                <a href="https://www.iiitr.ac.in/">IIITR Website</a>
-              </ul>
-              <ul key="7" className="list">
-                <li key="8" className="fas fa-chevron-right rightIcon"></li>
-                <a href="https://iiitr.ac.in/curriculum.html">Curriculum</a>
-              </ul>
-              <ul key="9" className="list">
-                <li key="10" className="fas fa-chevron-right rightIcon"></li>
-                <a href="https://www.iiitr.ac.in/faculty.html">
-                  Faculty Profiles
-                </a>
-              </ul>
-              <ul className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://students.iiitr.ac.in/">Student Activities</a>
-              </ul>
-              <ul className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://students.iiitr.ac.in/">Student Activities</a>
-              </ul>
-              <ul className="list">
-                <li class="fas fa-chevron-right rightIcon"></li>
-                <a href="https://iiitr.ac.in/reach_us.html">Reach Us</a>
-              </ul>
+              {FooterLinks.map((link, id) => {
+                return (
+                  <ul key={id} className="list">
+                    <li key={link.id} className="fas fa-chevron-right rightIcon"></li>
+                    <a href={link.link}>
+                        {link.name}
+                    </a>
+                  </ul>
+                );
+              })}
+              
             </ul>
           </div>
 

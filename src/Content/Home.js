@@ -28,15 +28,23 @@ const Thoughts = [
     altText: "TPO",
   },
 ];
-
 const WhyUs = [
   {
     id: 1,
-    heading: "The Prodigious Curriculum and Academic System",
-    content: ` Being mentored by IITH, IIITR has adopted the innovative
+    isLeftAlign: true,
+    haveLogo: false,
+    heading: "Academic System",
+    content: `Being mentored by IITH, IIITR has adopted the innovative
                     fractal academics system, which warrants continuous
                     evaluation. This ensures the students have a deeper
-                    understanding of the core subjects. Moreover, the highly
+                    understanding of the core subjects.`,
+  },
+  {
+    id: 2,
+    isLeftAlign: false,
+    haveLogo: false,
+    heading: "The Prodigious Curriculum",
+    content: `  The highly
                     flexible curriculum forged by the esteemed faculty of IITH and
                     IIITR exuberates innovation and inventiveness. With core
                     subjects being incorporated from the first semester itself, the
@@ -44,18 +52,15 @@ const WhyUs = [
                     on developing projects & industry relevant skills.`,
   },
   {
-    id: 2,
-    heading: "The coders, thinkers and tinkerers",
-    content: `The student family of IIITR consists of competitive coders, 
-                        web development enthusiasts, eager learners and diligent scholars.
-                        The students represent the creamy layer of talent in the country.
-                        They have been actively involved in various technical and cultural
-                        club activities of IIT Hyderabad. At the same time, the students
-                        have founded and set up numerous clubs of their own to further
-                        facilitate collaborative learning and introspective growth. (The
-                        students have been exploring various industry relevant skills &
-                        technologies like Python, C++, Java, Javascript, flutter, Go, flask,
-                        NoSQL, SQL, Django, Node, Vue, React, Docker etc.)`,
+    id: 3,
+    isLeftAlign: true,
+    haveLogo: false,
+    heading: "Industry-Relevant Work Experience",
+    content: `The students are working in different startups and tech giants from the first
+    lf which prepares them for the industry, working in different fields like Data Science
+    Machine Learning, Web Development, Software Development, etc. They have been exploring 
+    industry-relevant skills & technologies like Python, C++, Java, Javascript, flutter, Go,
+     flask, NoSQL, SQL, Django, Node, Vue, React, Docker, among others.`,
   },
 ];
 

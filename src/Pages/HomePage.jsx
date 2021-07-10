@@ -71,7 +71,7 @@ const HomePage = React.forwardRef((props, ref)=> {
         <div className="recruitUs" id="scrollTO" >
             
             <div id="aboutUs" className="aboutUs" data-aos="fade-up" >
-                <h1>About Us</h1>
+                <h1>About IIIT Raichur</h1>
                 <p>{AboutIIITR}</p>
             </div>
 
@@ -90,7 +90,7 @@ const HomePage = React.forwardRef((props, ref)=> {
                 )
             })}
 
-            <div>
+            <div style={{maxWidth: "1000px", margin: "auto"}}>
             <div id="recruit" style={{height:"2vh"}} ></div>
 
             <h1 className="recruitHead" data-aos="fade-up"  href='/somefile.txt' download >Why Recruit Us</h1>
@@ -99,6 +99,14 @@ const HomePage = React.forwardRef((props, ref)=> {
 
             </div>
  
+        </div>
+        <div className="company">
+            <marquee className="company-marqee">
+                <img height="80px" src="https://ckmvigil.in/assets/images/logo/logo_full.png"></img>
+                <img height="80px" src="https://www.capgemini.com/in-en/wp-content/themes/capgemini-komposite/assets/images/logo.svg"></img>
+                <img height="80px" src="https://vepaar.b-cdn.net/uploads/c-100623/campaign/11615239/media_1618817271368295829.png?crop_gravity=center&width=200&height=200"></img>
+                <img height="80px" src="https://storyxpress.co/img/new-Record-Page/illustration_and_icons/sx_logo.svg"></img>
+            </marquee>
         </div>
         {/* <div className="whyUsHeading">
             <h3 > Why us ??</h3>
