@@ -67,6 +67,10 @@ function Footer() {
               </ul>
               <ul className="list">
                 <li class="fas fa-chevron-right rightIcon"></li>
+                <a href="https://students.iiitr.ac.in/">Student Activities</a>
+              </li>
+              <li className="list">
+                <li class="fas fa-chevron-right rightIcon"></li>
                 <a href="https://iiitr.ac.in/reach_us.html">Reach Us</a>
               </ul>
             </ul>
