@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.a9482d83.chunk.css",
-    "main.js": "/web/static/js/main.0c5bd079.chunk.js",
+    "main.css": "/web/static/css/main.22e3a551.chunk.css",
+    "main.js": "/web/static/js/main.6ec13947.chunk.js",
     "runtime-main.js": "/web/static/js/runtime-main.4a3e9166.js",
     "static/css/2.ae9e5f60.chunk.css": "/web/static/css/2.ae9e5f60.chunk.css",
     "static/js/2.8a949ba1.chunk.js": "/web/static/js/2.8a949ba1.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/3.9938fcf0.chunk.js": "/web/static/js/3.9938fcf0.chunk.js",
     "index.html": "/web/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/web/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.a9482d83.chunk.css.map": "/web/static/css/main.a9482d83.chunk.css.map",
+    "static/css/main.22e3a551.chunk.css.map": "/web/static/css/main.22e3a551.chunk.css.map",
     "static/js/2.8a949ba1.chunk.js.LICENSE.txt": "/web/static/js/2.8a949ba1.chunk.js.LICENSE.txt",
     "static/media/Ananya.e5ebab7a.png": "/web/static/media/Ananya.e5ebab7a.png",
     "static/media/Brochure.c65645de.pdf": "/web/static/media/Brochure.c65645de.pdf",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.4a3e9166.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.8a949ba1.chunk.js",
-    "static/css/main.a9482d83.chunk.css",
-    "static/js/main.0c5bd079.chunk.js"
+    "static/css/main.22e3a551.chunk.css",
+    "static/js/main.6ec13947.chunk.js"
   ]
 }
