@@ -3,6 +3,7 @@ import Ananya from "../images/Ananya.png";
 import Jatin from "../images/webCord2.jpeg";
 import Yashwanth from "../images/Yashwanth.jpg";
 import Rohith from "../images/Rohith.jpg";
+import nimish from "../images/nimish.jpg"
 
 const WebTeam = [
   {
@@ -120,6 +121,7 @@ const PlacementTeam = [
     name: "Nimish Vadlamudi",
     email: "cs19b1026@iiitr.ac.in",
     phone: "+91 8106092571",
+    image: nimish
   },
   {
     name: "Ananya Mantravadi",
