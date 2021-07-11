@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web/static/css/main.5558608c.chunk.css",
-    "main.js": "/web/static/js/main.893eaf5d.chunk.js",
+    "main.js": "/web/static/js/main.5e11b4e4.chunk.js",
     "runtime-main.js": "/web/static/js/runtime-main.7d9a1105.js",
     "static/css/2.ae9e5f60.chunk.css": "/web/static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js": "/web/static/js/2.1324227b.chunk.js",
@@ -13,6 +13,7 @@
     "static/js/2.1324227b.chunk.js.LICENSE.txt": "/web/static/js/2.1324227b.chunk.js.LICENSE.txt",
     "static/media/Ananya.e5ebab7a.png": "/web/static/media/Ananya.e5ebab7a.png",
     "static/media/Brochure.c65645de.pdf": "/web/static/media/Brochure.c65645de.pdf",
+    "static/media/Yashwanth.9746ecfb.jpg": "/web/static/media/Yashwanth.9746ecfb.jpg",
     "static/media/contactUsDemoImage.90dc751e.jpg": "/web/static/media/contactUsDemoImage.90dc751e.jpg",
     "static/media/directorsdesk.1aab22ef.jpg": "/web/static/media/directorsdesk.1aab22ef.jpg",
     "static/media/image1.cd74d2d0.jpeg": "/web/static/media/image1.cd74d2d0.jpeg",
@@ -26,6 +27,6 @@
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.1324227b.chunk.js",
     "static/css/main.5558608c.chunk.css",
-    "static/js/main.893eaf5d.chunk.js"
+    "static/js/main.5e11b4e4.chunk.js"
   ]
 }
