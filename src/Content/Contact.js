@@ -78,6 +78,7 @@ const PlacementTeam = [
     name: "Kaustubh Kesharwani",
     email: "cs19b1015@iiitr.ac.in",
     phone: "+91 9121066021",
+    image: "https://drive.google.com/file/d/1Wu-b_9d6GU4EagSS1-NDN0QQwrXB2NuB/view?usp=sharing",
   },
   {
     name: "Manav Chaudhary",
