@@ -49,6 +49,7 @@ const PlacementCoordinators = [
     name: "Reethu",
     email: "cs19b1024@iiitr.ac.in",
     phone: "+91 8919239558",
+    image: "https://iiitr.ac.in/assets/images/prteam/reethu.webp",
   },
 ];
 
